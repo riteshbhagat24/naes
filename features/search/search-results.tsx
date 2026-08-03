@@ -2,10 +2,9 @@
 
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { ArrowRight, Search } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { quickLinks } from '@/config/navigation'
 import { searchSite } from '@/lib/search-index'
-import { Button } from '@/components/ui/button'
 
 /**
  * Search results.
@@ -22,31 +21,6 @@ export function SearchResults() {
 
   return (
     <>
-      <form action="/search" method="get" className="mb-14 max-w-2xl" role="search">
-        <label htmlFor="site-search" className="sr-only">
-          Search the website
-        </label>
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <div className="relative flex-1">
-            <Search
-              aria-hidden
-              className="pointer-events-none absolute left-4 top-1/2 size-[1.15rem] -translate-y-1/2 text-muted-foreground"
-            />
-            <input
-              id="site-search"
-              type="search"
-              name="q"
-              defaultValue={query}
-              placeholder="Search admissions, academics, campus…"
-              className="w-full rounded-xl border border-input bg-surface py-3.5 pl-12 pr-4 text-body-sm focus:outline-none focus:ring-2 focus:ring-ring/60"
-            />
-          </div>
-          <Button type="submit" size="lg">
-            Search
-          </Button>
-        </div>
-      </form>
-
       {query ? (
         <p className="mb-8 text-body-sm text-muted-foreground" aria-live="polite">
           {results.length === 0
