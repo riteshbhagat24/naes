@@ -68,7 +68,7 @@ export function AcademicExcellence({
                       alt=""
                       fill
                       sizes="(max-width: 640px) 76vw, 22rem"
-                      className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                      className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                     />
                     <Badge variant="light" size="sm" className="absolute left-4 top-4 z-10">
                       {stage.ageRange}

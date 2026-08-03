@@ -69,7 +69,7 @@ export function AchievementsSection({
                       alt=""
                       fill
                       sizes="(max-width: 768px) 100vw, 66vw"
-                      className="-z-10 object-cover transition-transform duration-[1100ms] ease-premium group-hover:scale-105"
+                      className="-z-10 object-cover transition-transform duration-1100 ease-premium group-hover:scale-105"
                     />
                   ) : null}
                   <span
@@ -103,7 +103,7 @@ export function AchievementsSection({
                         alt=""
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                        className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                       />
                     </div>
                   ) : null}

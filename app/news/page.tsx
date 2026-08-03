@@ -43,7 +43,7 @@ export default function NewsPage() {
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                  className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                 />
               </div>
             ) : null}
@@ -88,7 +88,7 @@ export default function NewsPage() {
                         alt=""
                         fill
                         sizes="(max-width: 640px) 100vw, 33vw"
-                        className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                        className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                       />
                     </div>
                   ) : null}

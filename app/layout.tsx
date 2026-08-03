@@ -85,7 +85,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={cn(fontSans.variable, fontDisplay.variable)}
     >
       <head>
-        {/* eslint-disable-next-line react/no-danger */}
         <script dangerouslySetInnerHTML={{ __html: PREFERENCES_SCRIPT }} />
       </head>
       <body className="min-h-dvh bg-background font-sans antialiased">

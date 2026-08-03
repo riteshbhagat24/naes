@@ -118,6 +118,13 @@ export interface GalleryImage {
   src: string
   alt: string
   caption: string
+  /**
+   * Intrinsic pixel dimensions, recorded when the album is built. They let each
+   * tile reserve its exact space before the image loads, which is what keeps
+   * cumulative layout shift at zero in the masonry grid.
+   */
+  width?: number
+  height?: number
   /** Filled in when images are flattened across albums. */
   album?: string
   year?: string

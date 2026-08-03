@@ -44,8 +44,12 @@ export function Reveal({
   id,
 }: RevealProps) {
   const base = OFFSET[direction]
-  const offset = distance
-    ? Object.fromEntries(Object.entries(base).map(([k, v]) => [k, Math.sign(v) * distance]))
+  // `Object.entries` widens the values to `number | undefined`, so the sign is
+  // taken from an explicit fallback rather than a possibly-absent axis.
+  const offset: { x?: number; y?: number } = distance
+    ? Object.fromEntries(
+        Object.entries(base).map(([axis, value]) => [axis, Math.sign(value ?? 0) * distance]),
+      )
     : base
 
   const variants: Variants = {

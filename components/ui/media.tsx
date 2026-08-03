@@ -27,6 +27,7 @@ export function RevealImage({
   wrapperClassName,
   graded = true,
   rounded = true,
+  alt,
   ...props
 }: RevealImageProps) {
   return (
@@ -42,7 +43,7 @@ export function RevealImage({
         wrapperClassName,
       )}
     >
-      <Image {...props} className={cn('size-full object-cover', className)} />
+      <Image alt={alt} {...props} className={cn('size-full object-cover', className)} />
     </motion.div>
   )
 }
@@ -62,6 +63,7 @@ export function ParallaxImage({
   wrapperClassName,
   graded = true,
   rounded = true,
+  alt,
   ...props
 }: ParallaxImageProps) {
   const ref = React.useRef<HTMLDivElement>(null)
@@ -80,7 +82,7 @@ export function ParallaxImage({
       )}
     >
       <motion.div style={reduced ? undefined : { y }} className="relative size-full scale-[1.18]">
-        <Image {...props} className={cn('size-full object-cover', className)} />
+        <Image alt={alt} {...props} className={cn('size-full object-cover', className)} />
       </motion.div>
     </div>
   )

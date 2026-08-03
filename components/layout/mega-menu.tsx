@@ -84,7 +84,7 @@ export function MegaMenuPanel({
                       alt=""
                       fill
                       sizes="352px"
-                      className="-z-10 object-cover transition-transform duration-[900ms] ease-premium group-hover/feature:scale-105"
+                      className="-z-10 object-cover transition-transform duration-900 ease-premium group-hover/feature:scale-105"
                     />
                     <span
                       aria-hidden

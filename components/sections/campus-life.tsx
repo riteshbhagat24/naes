@@ -153,7 +153,7 @@ export function LaboratoriesSection({ items }: { items: FacilityItem[] }) {
                   alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                  className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                 />
               </div>
               <h3 className="mt-6 font-display text-h5 font-semibold text-white">{item.title}</h3>

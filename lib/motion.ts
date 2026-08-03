@@ -8,14 +8,26 @@ import type { Transition, Variants } from 'framer-motion'
  * which is what keeps scroll-linked motion at 60fps.
  */
 
-export const EASE = {
+/**
+ * Cubic-bezier control points, typed as mutable 4-tuples.
+ *
+ * `as const` would make these readonly tuples, which Framer Motion's
+ * `BezierDefinition` will not accept — hence the explicit annotation.
+ */
+type Bezier = [number, number, number, number]
+
+export const EASE: {
   /** Decelerating; the default for anything entering the viewport. */
-  out: [0.16, 1, 0.3, 1],
+  out: Bezier
   /** Symmetrical; used by overlays, drawers and page transitions. */
-  inOut: [0.87, 0, 0.13, 1],
+  inOut: Bezier
   /** Soft settle; used by hover and micro-interactions. */
+  soft: Bezier
+} = {
+  out: [0.16, 1, 0.3, 1],
+  inOut: [0.87, 0, 0.13, 1],
   soft: [0.22, 1, 0.36, 1],
-} as const
+}
 
 export const transition = {
   fast: { duration: 0.32, ease: EASE.soft } satisfies Transition,

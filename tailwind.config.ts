@@ -185,6 +185,14 @@ const config: Config = {
         glow: '0 0 0 1px hsl(var(--primary) / 0.22), 0 18px 46px -18px hsl(var(--primary) / 0.42)',
         inset: 'inset 0 1px 0 0 hsl(0 0% 100% / 0.06)',
       },
+      transitionDuration: {
+        /* Named steps for the slow photographic moves, so the arbitrary
+           `duration-[900ms]` syntax — which Tailwind cannot disambiguate from
+           animation-duration — is never needed. */
+        400: '400ms',
+        900: '900ms',
+        1100: '1100ms',
+      },
       transitionTimingFunction: {
         'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
         'in-out-expo': 'cubic-bezier(0.87, 0, 0.13, 1)',

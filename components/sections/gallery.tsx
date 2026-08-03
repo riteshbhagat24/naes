@@ -62,7 +62,7 @@ export function GalleryGrid({
                         ? '(max-width: 1024px) 45vw, 24vw'
                         : '(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 31vw'
                     }
-                    className="h-auto w-full object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-[1.04]"
+                    className="h-auto w-full object-cover transition-transform duration-900 ease-premium group-hover:scale-[1.04]"
                   />
                 </span>
 

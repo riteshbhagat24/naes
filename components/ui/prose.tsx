@@ -26,7 +26,6 @@ export function Prose({
         invert && 'prose-invert',
         className,
       )}
-      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: renderMarkdown(markdown) }}
     />
   )

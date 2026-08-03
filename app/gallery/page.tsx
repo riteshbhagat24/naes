@@ -49,7 +49,7 @@ export default function GalleryPage() {
                       alt=""
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-[900ms] ease-premium group-hover:scale-105"
+                      className="object-cover transition-transform duration-900 ease-premium group-hover:scale-105"
                     />
                     <Badge variant="light" size="sm" className="absolute left-4 top-4 z-10">
                       {album.images.length} photos
