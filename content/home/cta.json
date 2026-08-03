@@ -1,0 +1,12 @@
+{
+  "eyebrow": "Admissions 2026–27",
+  "title": "Come and see the school for yourself",
+  "description": "A prospectus can only tell you so much. Walk the corridors on a working morning, watch a class, meet the teachers who would teach your child, and ask us anything.",
+  "primaryCta": { "label": "Begin an admission enquiry", "href": "/admissions/enquiry" },
+  "secondaryCta": { "label": "Call the school office", "href": "tel:+919657766740" },
+  "note": "Our admissions office replies to every enquiry within two working days.",
+  "image": {
+    "src": "/images/campus/campus-4.jpg",
+    "alt": "Students and staff on the campus of New Apostolic English High School"
+  }
+}

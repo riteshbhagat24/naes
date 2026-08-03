@@ -1,0 +1,108 @@
+{
+  "eyebrow": "Careers",
+  "title": "Teach where the work is taken seriously",
+  "lead": "We are looking for teachers who go beyond the syllabus — the ones who stay back for the student who has not understood, and who have something ready for the student who has raced ahead.",
+  "intro": [
+    "New Apostolic English High School and Dr. Bower Apostolic Junior College employ teaching and non-teaching staff across Pre-Primary, Primary, High School, Junior College and our degree programmes.",
+    "What we offer is a small institution where your work is visible: classes you keep for years, colleagues who know your students, and a management that expects you to be given the time to teach properly."
+  ],
+  "whyJoin": [
+    {
+      "icon": "users",
+      "title": "Classes you keep",
+      "description": "Teachers stay with a cohort long enough to see the effect of their own work."
+    },
+    {
+      "icon": "flask-conical",
+      "title": "Resources that get used",
+      "description": "Laboratories, smart classrooms and workshop equipment are in the timetable, not in a cupboard."
+    },
+    {
+      "icon": "heart-handshake",
+      "title": "A stated ethic",
+      "description": "Love thy neighbour as thyself is the standard for how staff are treated too."
+    },
+    {
+      "icon": "graduation-cap",
+      "title": "Room to grow",
+      "description": "Section responsibility, examination coordination and programme leadership are filled from within."
+    }
+  ],
+  "openings": [
+    {
+      "id": "mathematics-teacher",
+      "title": "Mathematics Teacher",
+      "department": "Mathematics",
+      "employmentType": "Full time",
+      "location": "Nagpur, Maharashtra",
+      "experience": "2+ years in a school setting",
+      "qualification": "B.Sc./M.Sc. in Mathematics with B.Ed.",
+      "posted": "2026-06-10",
+      "summary": "To teach mathematics across the middle and high school, with responsibility for Class X board preparation.",
+      "responsibilities": [
+        "Teach mathematics to assigned classes across Grades VI to X following the Maharashtra State Board syllabus.",
+        "Plan and deliver lessons that build understanding through worked problems rather than demonstration alone.",
+        "Set, mark and record continuous assessment, unit tests and terminal examinations.",
+        "Run structured revision and past-paper practice for Class X, with additional support and extension sessions.",
+        "Meet parents at scheduled parent–teacher meetings and communicate concerns early."
+      ]
+    },
+    {
+      "id": "pre-primary-teacher",
+      "title": "Pre-Primary Teacher",
+      "department": "Pre-Primary",
+      "employmentType": "Full time",
+      "location": "Nagpur, Maharashtra",
+      "experience": "1+ year, or a strong NTT/ECCE qualification",
+      "qualification": "Graduate with NTT / ECCE / Montessori training",
+      "posted": "2026-06-10",
+      "summary": "To teach a Nursery, LKG or UKG class, with responsibility for early language, numeracy and settling in.",
+      "responsibilities": [
+        "Plan and run a structured but flexible day of phonics, early numeracy, craft, rhyme and free play.",
+        "Bring every child to a working level of spoken English regardless of their starting point.",
+        "Maintain daily observation records and share progress with parents.",
+        "Work alongside the section attendants to keep the section safe, calm and well supervised."
+      ]
+    },
+    {
+      "id": "computer-science-lecturer",
+      "title": "Computer Science Lecturer",
+      "department": "Computer Science",
+      "employmentType": "Full time",
+      "location": "Nagpur, Maharashtra",
+      "experience": "3+ years teaching at Junior College or degree level",
+      "qualification": "M.Sc. (Computer Science) / MCA, NET-qualified preferred",
+      "posted": "2026-06-10",
+      "summary": "To teach Information Technology at Junior College and applied papers on the BCCA programme.",
+      "responsibilities": [
+        "Teach Information Technology for Grades XI and XII and applied papers on the BCCA degree programme.",
+        "Supervise practical sessions in the computer laboratory and maintain journal standards through the year.",
+        "Support the school's robotics workshops for high school classes.",
+        "Guide students on project work, and advise senior students on progression into computing courses."
+      ]
+    },
+    {
+      "id": "physical-education-teacher",
+      "title": "Physical Education Teacher",
+      "department": "Physical Education",
+      "employmentType": "Full time",
+      "location": "Nagpur, Maharashtra",
+      "experience": "2+ years, with coaching experience preferred",
+      "qualification": "B.P.Ed. / M.P.Ed.",
+      "posted": "2026-06-10",
+      "summary": "To run timetabled physical education across the school and coach the inter-school teams.",
+      "responsibilities": [
+        "Deliver timetabled physical education for every grade, adapted by age and ability.",
+        "Coach school teams across throwball, volleyball, basketball, athletics and indoor disciplines.",
+        "Plan and run the inter-house programme and the annual Apostolic Sports meet.",
+        "Maintain equipment, and enforce safety procedure on the ground and in the gymnasium."
+      ]
+    }
+  ],
+  "howToApply": [
+    "Complete the application form on this page, attaching a link to your CV if you have one online.",
+    "Alternatively, download the printable application form and submit it at the school office.",
+    "Shortlisted candidates are invited for a demonstration lesson with a live class, followed by an interview with the Principal.",
+    "References are taken up before an offer is confirmed."
+  ]
+}

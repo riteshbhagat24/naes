@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Vision · Mission · Philosophy",
+  "title": "To create caring, responsible and dynamic global citizens of tomorrow",
+  "lead": "Committed to the development of the nation, and to the growth of every individual child within it.",
+  "motto": "Develop a passion for learning, and you will always grow.",
+  "vision": {
+    "title": "Our Vision",
+    "statement": "To transform education by creating inclusive, forward-thinking and compassionate future citizens.",
+    "paragraphs": [
+      "Inclusive, because a school that only works for the confident child is not doing its job. Forward-thinking, because the world our students will work in is not the one we were trained for. Compassionate, because ability without decency has never yet improved a community.",
+      "We hold the three together deliberately. Any one of them alone produces something we would not want to send out into the world."
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "statement": "To build a foundation of lifelong learning through a balanced curriculum and a commitment to individual growth and community.",
+    "paragraphs": [
+      "A balanced curriculum means academics, the arts, sport and service given real time in the week — not the first three squeezed to make room for examinations.",
+      "A commitment to individual growth means a teacher is expected to know where each child is, not only where the class is. And community means the school is answerable to the families and the neighbourhood around it."
+    ]
+  },
+  "philosophy": {
+    "title": "Our Educational Philosophy",
+    "paragraphs": [
+      "Apostolic believes that every student is an individual with a unique personality. The school therefore offers an education that weaves academic and artistic excellence together with social engagement and moral awareness.",
+      "We work with educational principles that encourage imagination, flexibility in thinking and a genuine love of learning. Questions and challenges are introduced progressively and at the right age, so that initiative and self-direction grow as the child does rather than being demanded all at once.",
+      "The result we are aiming for is a young adult dedicated to the pursuit of ongoing learning and eager to contribute positively to the global society of the twenty-first century."
+    ]
+  },
+  "values": [
+    {
+      "title": "Individuality",
+      "description": "Every student is treated as a person with a distinct temperament, pace and set of gifts."
+    },
+    {
+      "title": "Creativity",
+      "description": "Imagination and flexible thinking are taught, practised and assessed — not merely admired."
+    },
+    {
+      "title": "Innovation",
+      "description": "New methods are welcome in our classrooms when they demonstrably help children learn."
+    },
+    {
+      "title": "Compassion",
+      "description": "Our motto is a working instruction: love thy neighbour as thyself."
+    },
+    {
+      "title": "Responsibility",
+      "description": "Students are given real duties — to their class, their team, their campus and their city."
+    },
+    {
+      "title": "Perseverance",
+      "description": "Effort is recognised as clearly as attainment, because effort is the part a child controls."
+    }
+  ]
+}

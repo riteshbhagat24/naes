@@ -1,0 +1,148 @@
+{
+  "eyebrow": "The learning pathway",
+  "title": "Six stages, one continuous education",
+  "description": "Each stage is designed to hand the next one a child who is ready — academically, socially and in the habits of work.",
+  "stages": [
+    {
+      "slug": "pre-primary",
+      "name": "Pre-Primary",
+      "ageRange": "3 to 5 years",
+      "grades": ["Nursery", "KG I", "KG II", "LKG", "UKG"],
+      "timings": "8:00 AM – 11:00 AM",
+      "summary": "The first three years, where school becomes a place a child wants to come back to.",
+      "description": [
+        "Pre-Primary at New Apostolic is built around activity, rhythm and language. Children arrive at three with very different starting points — some already chatty in English, some hearing it for the first time — and the section's whole job is to close that gap without any child feeling it.",
+        "Days are structured but never rigid: phonics and number sense in the freshest part of the morning, then craft, rhyme, music, movement and free play. Themed activity days give the youngest children a reason to talk, taste, count and describe.",
+        "Two attendants are assigned to the Pre-Primary section in addition to the class teachers, so a three-year-old is never far from an adult who knows them."
+      ],
+      "subjects": [
+        "English language & phonics",
+        "Early numeracy",
+        "Environmental awareness",
+        "Rhyme, music & movement",
+        "Art & craft",
+        "Story and conversation"
+      ],
+      "highlights": [
+        { "icon": "smile", "title": "Settling in gently", "description": "A staggered start and a familiar routine so the first weeks are calm." },
+        { "icon": "puzzle", "title": "Play with purpose", "description": "Every activity has a named skill behind it — grip, sequence, sound, or turn-taking." },
+        { "icon": "shield-check", "title": "Two attendants", "description": "Dedicated ayas for the section, in addition to teaching staff." }
+      ],
+      "image": "/images/gallery/pre-primary-banana-day.jpg"
+    },
+    {
+      "slug": "primary",
+      "name": "Primary School",
+      "ageRange": "6 to 10 years",
+      "grades": ["Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"],
+      "timings": "7:00 AM – 11:30 AM",
+      "summary": "Where reading, writing and number become fluent enough to disappear into the background.",
+      "description": [
+        "The primary years are about fluency. A child who has to think about handwriting cannot think about what they are writing; a child who has to think about multiplication cannot think about the problem. So we spend these years making the basics automatic.",
+        "English is the medium throughout, with Marathi and Hindi taught alongside it. Mathematics moves from concrete to pictorial to abstract. Science begins as structured observation rather than definition-copying, and the environment around the school is used as the first laboratory.",
+        "This is also where the wider school day begins in earnest — assembly duties, class responsibilities, the first stage performances, Teachers' Day, and the celebrations that mark the calendar."
+      ],
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Environmental Science",
+        "Marathi",
+        "Hindi",
+        "Computer literacy",
+        "Art, craft & music",
+        "Physical education"
+      ],
+      "highlights": [
+        { "icon": "book-open", "title": "Fluency first", "description": "Reading, handwriting and number facts practised to automaticity." },
+        { "icon": "monitor", "title": "Digital classrooms", "description": "Smart boards used for demonstration, revision and recorded explanation." },
+        { "icon": "sparkles", "title": "The whole calendar", "description": "Celebration, stage and service are part of the timetable from Grade I." }
+      ],
+      "image": "/images/academics/primary-students.jpg"
+    },
+    {
+      "slug": "high-school",
+      "name": "High School",
+      "ageRange": "11 to 16 years",
+      "grades": ["Grade VI", "Grade VII", "Grade VIII", "Grade IX", "Grade X"],
+      "timings": "12:00 PM – 5:00 PM",
+      "summary": "Maharashtra State Board rigour, taught with laboratories, workshops and a great deal of practice.",
+      "description": [
+        "High School is where the work becomes serious and the stakes become visible. The Maharashtra State Board syllabus sets the destination; how we get there is our own. Science is taught with the physics and computer laboratories in constant use. Mathematics is taught by working problems, not by watching them worked.",
+        "Robotics workshops, science exhibitions and study tours run through the year, and students are entered for inter-school competition in sport, music and public speaking. Our throwball team has represented the school at state level, and our singers have returned from patriotic singing competitions with medals and certificates.",
+        "From Grade IX, subject teachers begin structured revision and past-paper practice for the Class X board examination, with additional support scheduled for students who need it and extension work for those who are ready to move faster."
+      ],
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Science & Technology",
+        "Social Studies (History, Civics, Geography)",
+        "Marathi",
+        "Hindi / Sanskrit",
+        "Computer Science",
+        "Physical education & health"
+      ],
+      "highlights": [
+        { "icon": "flask-conical", "title": "Laboratory-led science", "description": "Physics and computer laboratories in regular timetabled use." },
+        { "icon": "cpu", "title": "Robotics workshops", "description": "Hands-on sessions run for high school classes through the session." },
+        { "icon": "trophy", "title": "Competitive sport", "description": "State-level representation in throwball, plus a full inter-house programme." }
+      ],
+      "image": "/images/academics/high-school-students.jpg"
+    },
+    {
+      "slug": "junior-college",
+      "name": "Junior College",
+      "ageRange": "16 to 18 years",
+      "grades": ["Grade XI", "Grade XII"],
+      "timings": "12:00 PM – 5:00 PM",
+      "summary": "Dr. Bower Apostolic Junior College — two years that decide the next ten.",
+      "description": [
+        "Junior College at Dr. Bower Apostolic is deliberately small and deliberately demanding. Students are taught in an environment where the lecturer knows whether they attended, whether they understood, and whether they have submitted.",
+        "Practical papers are taken seriously: the computer laboratory is the working home of the practical syllabus, and journals are supervised rather than signed off. Alongside the board syllabus, senior students receive structured career guidance — stream implications, entrance routes, application timelines and, where it fits, a path directly into our own BBA and BCCA programmes.",
+        "The success of our junior college students has been recognised in the regional press, and their results remain the clearest statement of what the two years are for."
+      ],
+      "subjects": [
+        "English",
+        "Commerce & Book-keeping",
+        "Economics",
+        "Mathematics & Statistics",
+        "Information Technology",
+        "Environment Education",
+        "Physical education"
+      ],
+      "highlights": [
+        { "icon": "laptop", "title": "Practical papers", "description": "Computer laboratory time built into the weekly timetable." },
+        { "icon": "compass", "title": "Career guidance", "description": "Stream choice, entrance routes and application planning for every student." },
+        { "icon": "newspaper", "title": "Recognised results", "description": "Junior college achievement featured in the regional press." }
+      ],
+      "image": "/images/academics/junior-college-students.jpg"
+    },
+    {
+      "slug": "degree-programmes",
+      "name": "Degree Programmes",
+      "ageRange": "18 years and above",
+      "grades": ["BBA", "BCCA"],
+      "timings": "As per the college timetable",
+      "summary": "Bachelor of Business Administration and Bachelor of Computer & Commerce Applications.",
+      "description": [
+        "Our degree programmes let a student complete their entire education on the campus they grew up on. The Bachelor of Business Administration (BBA) covers management, accounting, marketing, human resources and the practical business skills that a first employer actually tests. The Bachelor of Computer & Commerce Applications (BCCA) sits at the join between commerce and computing — programming, databases, accounting systems and applied office technology.",
+        "Both programmes are taught in the same tradition as the rest of the institution: attendance matters, practical work is supervised, and a lecturer will notice when a student stops turning up.",
+        "For details of eligibility, intake and the current fee structure for either programme, please contact the college office."
+      ],
+      "subjects": [
+        "Principles of Management",
+        "Financial Accounting",
+        "Business Communication",
+        "Marketing & Human Resources",
+        "Programming fundamentals",
+        "Database & office systems",
+        "Project work"
+      ],
+      "highlights": [
+        { "icon": "briefcase", "title": "BBA", "description": "Management, accounting, marketing and applied business practice." },
+        { "icon": "code", "title": "BCCA", "description": "Commerce and computer applications taught together." },
+        { "icon": "graduation-cap", "title": "One campus", "description": "Nursery to degree without changing institutions." }
+      ],
+      "image": "/images/facilities/computer-lab.jpg"
+    }
+  ]
+}

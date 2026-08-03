@@ -1,0 +1,29 @@
+{
+  "eyebrow": "In their words",
+  "title": "What the people inside the school say about it",
+  "description": "Statements from our Principal and Head Mistress on the standard the institution holds itself to.",
+  "note": "Parent and alumni testimonials are collected each session by the school office and published here with permission.",
+  "items": [
+    {
+      "quote": "We feel proud to provide quality education, equipping our students with skills, confidence and a positive approach, with all-round development.",
+      "name": "Ms. Vinita V. Bower",
+      "role": "Principal, New Apostolic English High School & Dr. Bower Apostolic Junior College",
+      "portrait": "/images/people/principal-vinita-v-bower.jpg",
+      "relation": "faculty"
+    },
+    {
+      "quote": "The school differentiates itself from others through its philosophy of creating an all-round personality. It aims to nurture young minds and see them grow into good citizens of our country.",
+      "name": "Dr. Vandana P. Benjamin",
+      "role": "Head Mistress, New Apostolic English School",
+      "portrait": "/images/people/head-mistress-vandana-p-benjamin.jpg",
+      "relation": "faculty"
+    },
+    {
+      "quote": "We are a school with a difference. We value individualism, creativity and innovation, and we strive to nurture them in our students.",
+      "name": "The Management",
+      "role": "National Apostolic Church Education Society",
+      "portrait": "/images/people/founder-bishop-vincent-s-bower.jpg",
+      "relation": "faculty"
+    }
+  ]
+}

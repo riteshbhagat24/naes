@@ -1,0 +1,25 @@
+{
+  "eyebrow": "Video",
+  "title": "Watch the school at work",
+  "description": "Films from our own ground and features carried by the regional press. Videos load only when you press play, so the page stays fast for everyone else.",
+  "items": [
+    {
+      "id": "apostolic-sports-2025",
+      "youtubeId": "8sjZjpvc14Q",
+      "title": "Apostolic Sports 2025",
+      "description": "The annual sports meet, streamed in full from the school ground for the families who could not be there in person — track events, march past, inter-house finals and prize giving.",
+      "source": "New Apostolic English High School",
+      "date": "2025-01-18",
+      "duration": "Full event"
+    },
+    {
+      "id": "ucn-junior-college-feature",
+      "youtubeId": "ee-vGbwYfyk",
+      "title": "Dr. Bower Apostolic Junior College in the news",
+      "description": "A regional news feature on the achievement of students at Dr. Bower Apostolic Junior College, Nagpur.",
+      "source": "UCN News Live",
+      "date": "2024-05-22",
+      "duration": "3 min"
+    }
+  ]
+}

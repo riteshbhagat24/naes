@@ -1,0 +1,68 @@
+{
+  "eyebrow": "Management & leadership",
+  "title": "The people the institution rests on",
+  "lead": "New Apostolic English High School and Dr. Bower Apostolic Junior College are run under the National Apostolic Church Education Society.",
+  "leadership": [
+    {
+      "name": "Respected Late Bishop Adv. Dr. Vincent S. Bower",
+      "role": "Founder",
+      "department": "National Apostolic Church Education Society",
+      "portrait": "/images/people/founder-bishop-vincent-s-bower.jpg",
+      "bio": "Founder of the National Apostolic Church Education Society and of this institution. An advocate and churchman who believed that a serious English-medium education should be within reach of every family in South Nagpur, and who set the school's motto — love thy neighbour as thyself — at the centre of its crest.",
+      "order": 1
+    },
+    {
+      "name": "Respected Late Mrs. Alice Vincent Bower",
+      "role": "Mother Superior",
+      "department": "School Administration",
+      "portrait": "/images/people/mother-superior-alice-vincent-bower.jpg",
+      "bio": "Mother Superior of the school and the source of the care that still characterises it. She shaped the daily life of the institution — its warmth, its discipline and its insistence that a child be known individually rather than managed collectively.",
+      "order": 2
+    },
+    {
+      "name": "Ms. Vinita V. Bower",
+      "role": "Principal",
+      "department": "New Apostolic English High School & Dr. Bower Apostolic Junior College",
+      "portrait": "/images/people/principal-vinita-v-bower.jpg",
+      "bio": "Principal of both the high school and the junior college. She leads the academic direction of the institution and its relationship with parents, and is the custodian of the founding standard the school is measured against.",
+      "quote": "We feel proud to provide quality education, equipping our students with skills, confidence and a positive approach, with all-round development.",
+      "order": 3
+    },
+    {
+      "name": "Dr. Vandana P. Benjamin",
+      "role": "Head Mistress",
+      "department": "New Apostolic English School",
+      "portrait": "/images/people/head-mistress-vandana-p-benjamin.jpg",
+      "bio": "Head Mistress of the school, responsible for the day-to-day running of the primary and high school sections, the teaching staff and the pastoral care of students.",
+      "quote": "The school differentiates itself from others through its philosophy of creating an all-round personality. It aims to nurture young minds and see them grow into good citizens of our country.",
+      "order": 4
+    }
+  ],
+  "departments": [
+    {
+      "title": "Pre-Primary section",
+      "description": "Class teachers and dedicated attendants for Nursery, LKG and UKG, with a focus on language, activity and settling in.",
+      "image": "/images/people/staff-pre-primary.jpg",
+      "session": "Session 2024–25"
+    },
+    {
+      "title": "Primary teaching staff",
+      "description": "Subject and class teachers across Grades I to V, responsible for fluency in language, mathematics and structured observation.",
+      "image": "/images/people/staff-primary-2024-25.jpg",
+      "session": "Session 2024–25"
+    },
+    {
+      "title": "High school teaching staff",
+      "description": "Subject specialists across Grades VI to X, laboratory supervision and Class X board preparation.",
+      "image": "/images/people/staff-high-school-2024-25.jpg",
+      "session": "Session 2024–25"
+    },
+    {
+      "title": "Junior college faculty",
+      "description": "Lecturers for Grades XI and XII and the BBA and BCCA degree programmes, with practical supervision in the computer laboratory.",
+      "image": "/images/academics/junior-college-students.jpg",
+      "session": "Session 2024–25"
+    }
+  ],
+  "facultyNote": "Individual faculty profiles are maintained by the school office and published here as they are confirmed each session. For a specific subject teacher, please contact the school office on +91 96577 66740."
+}

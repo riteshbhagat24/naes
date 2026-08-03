@@ -1,0 +1,962 @@
+# ---------------------------------------------------------------------------
+# Decap CMS — New Apostolic English High School
+#
+# Git-backed, free, and hosted entirely on Vercel:
+#   • Editors sign in with GitHub (see /api/oauth/auth and /api/oauth/callback)
+#   • Saving writes a commit to this repository
+#   • The commit triggers a Vercel deployment, and the site updates
+#
+# `backend.base_url` is set at runtime in index.html so the same configuration
+# works on the production domain and on preview deployments.
+# ---------------------------------------------------------------------------
+
+# Editing on http://localhost uses the local proxy (`npm run cms`) instead of
+# GitHub, so a second OAuth app is not needed for development.
+local_backend: true
+
+backend:
+  name: github
+  repo: riteshbhagat24/naes
+  branch: main
+  auth_endpoint: api/oauth/auth
+  commit_messages:
+    create: 'content: create {{collection}} “{{slug}}”'
+    update: 'content: update {{collection}} “{{slug}}”'
+    delete: 'content: delete {{collection}} “{{slug}}”'
+    uploadMedia: 'content: upload {{path}}'
+    deleteMedia: 'content: delete {{path}}'
+
+publish_mode: editorial_workflow
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+# site_url and display_url are set at runtime in index.html from
+# window.location.origin, so the CMS follows the Vercel address today and the
+# school's own domain later, with nothing to edit here.
+logo_url: /brand/logo-crest-512.png
+
+collections:
+  # =========================================================== site settings
+  - name: site
+    label: Site
+    label_singular: Setting
+    description: Announcement bar and site-wide notices.
+    files:
+      - name: announcement
+        label: Announcement bar
+        file: content/site/announcement.json
+        fields:
+          - { name: enabled, label: Show the announcement bar, widget: boolean, default: true }
+          - { name: label, label: Short label, widget: string, hint: 'e.g. Admissions' }
+          - { name: message, label: Message, widget: string }
+          - { name: linkText, label: Link text, widget: string }
+          - { name: linkHref, label: Link URL, widget: string, default: /admissions/enquiry }
+          - {
+              name: tone,
+              label: Tone,
+              widget: select,
+              options: [primary, accent, neutral],
+              default: primary,
+            }
+
+  # ================================================================ homepage
+  - name: home
+    label: Homepage
+    label_singular: Section
+    description: Every band on the homepage, in the order it appears.
+    files:
+      - name: hero
+        label: 1 · Hero
+        file: content/home/hero.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - {
+              name: headlineLines,
+              label: Headline (one line per entry),
+              widget: list,
+              field: { name: line, label: Line, widget: string },
+            }
+          - { name: subheadline, label: Sub-headline, widget: string }
+          - { name: intro, label: Introduction, widget: text }
+          - name: primaryCta
+            label: Primary button
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - name: secondaryCta
+            label: Secondary button
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - { name: scrollHint, label: Scroll hint, widget: string }
+          - {
+              name: videoUrl,
+              label: Background video URL,
+              widget: string,
+              required: false,
+              hint: 'Optional. Leave empty to use the animated photo sequence below.',
+            }
+          - name: slides
+            label: Photo sequence
+            widget: list
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Alt text, widget: string }
+              - { name: caption, label: Caption, widget: string }
+
+      - name: stats
+        label: 2 · Achievements counter
+        file: content/home/stats.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: items
+            label: Statistics
+            widget: list
+            fields:
+              - { name: value, label: Number, widget: number, value_type: int }
+              - { name: suffix, label: Suffix, widget: string, required: false }
+              - { name: prefix, label: Prefix, widget: string, required: false }
+              - { name: label, label: Label, widget: string }
+              - { name: detail, label: Detail, widget: text }
+
+      - name: about
+        label: 3 · About the school
+        file: content/home/about.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead sentence, widget: text }
+          - {
+              name: paragraphs,
+              label: Paragraphs,
+              widget: list,
+              field: { name: text, label: Paragraph, widget: text },
+            }
+          - name: highlights
+            label: Principles
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: images
+            label: Image cluster (exactly three)
+            widget: list
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Alt text, widget: string }
+          - name: cta
+            label: Link
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+
+      - name: why
+        label: 6 · Why choose us
+        file: content/home/why-choose-us.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: items
+            label: Reasons
+            widget: list
+            fields:
+              - {
+                  name: icon,
+                  label: Icon,
+                  widget: select,
+                  options:
+                    [
+                      users,
+                      monitor,
+                      flask-conical,
+                      heart-handshake,
+                      compass,
+                      shield-check,
+                      book-open,
+                      trophy,
+                      sparkles,
+                      leaf,
+                      cpu,
+                      laptop,
+                    ],
+                }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Image, widget: image }
+
+      - name: cta
+        label: 24 · Closing call to action
+        file: content/home/cta.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: primaryCta
+            label: Primary button
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - name: secondaryCta
+            label: Secondary button
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - { name: note, label: Note, widget: string }
+          - name: image
+            label: Background image
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Alt text, widget: string }
+
+  # ================================================================ messages
+  - name: messages
+    label: Leadership messages
+    label_singular: Message
+    folder: content/messages
+    create: true
+    slug: '{{fields.slug}}'
+    identifier_field: name
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: slug, label: Slug, widget: string, hint: 'founder, principal, head-mistress' }
+      - { name: name, label: Name, widget: string }
+      - { name: role, label: Role, widget: string }
+      - { name: portrait, label: Portrait, widget: image }
+      - { name: salutation, label: Salutation, widget: string }
+      - { name: quote, label: Pull quote, widget: text }
+      - { name: signature, label: Signature, widget: string, required: false }
+      - { name: order, label: Order, widget: number, value_type: int, default: 1 }
+      - { name: body, label: Message, widget: markdown }
+
+  # =================================================================== about
+  - name: about
+    label: About pages
+    label_singular: Page
+    files:
+      - name: vision-mission
+        label: Vision, mission & philosophy
+        file: content/about/vision-mission.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - { name: motto, label: Motto, widget: string }
+          - name: vision
+            label: Vision
+            widget: object
+            fields:
+              - { name: title, label: Heading, widget: string }
+              - { name: statement, label: Statement, widget: text }
+              - {
+                  name: paragraphs,
+                  label: Paragraphs,
+                  widget: list,
+                  field: { name: text, label: Paragraph, widget: text },
+                }
+          - name: mission
+            label: Mission
+            widget: object
+            fields:
+              - { name: title, label: Heading, widget: string }
+              - { name: statement, label: Statement, widget: text }
+              - {
+                  name: paragraphs,
+                  label: Paragraphs,
+                  widget: list,
+                  field: { name: text, label: Paragraph, widget: text },
+                }
+          - name: philosophy
+            label: Educational philosophy
+            widget: object
+            fields:
+              - { name: title, label: Heading, widget: string }
+              - {
+                  name: paragraphs,
+                  label: Paragraphs,
+                  widget: list,
+                  field: { name: text, label: Paragraph, widget: text },
+                }
+          - name: values
+            label: Values
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+
+      - name: history
+        label: History & timeline
+        file: content/about/history.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - {
+              name: intro,
+              label: Introduction,
+              widget: list,
+              field: { name: text, label: Paragraph, widget: text },
+            }
+          - name: timeline
+            label: Timeline
+            widget: list
+            fields:
+              - { name: period, label: Period, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: images
+            label: Portraits
+            widget: list
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Alt text, widget: string }
+              - { name: caption, label: Caption, widget: string }
+
+      - name: leadership
+        label: Management & staff
+        file: content/people/leadership.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - name: leadership
+            label: Office bearers
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: role, label: Role, widget: string }
+              - { name: department, label: Department, widget: string, required: false }
+              - { name: portrait, label: Portrait, widget: image, required: false }
+              - { name: bio, label: Biography, widget: text }
+              - { name: quote, label: Quote, widget: text, required: false }
+              - { name: order, label: Order, widget: number, value_type: int }
+          - name: departments
+            label: Teaching teams
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Photograph, widget: image }
+              - { name: session, label: Session, widget: string }
+          - { name: facultyNote, label: Faculty note, widget: text }
+
+  # =============================================================== academics
+  - name: academics
+    label: Academics
+    label_singular: Page
+    files:
+      - name: stages
+        label: Academic stages
+        file: content/academics/stages.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: stages
+            label: Stages
+            widget: list
+            fields:
+              - { name: slug, label: Slug, widget: string }
+              - { name: name, label: Name, widget: string }
+              - { name: ageRange, label: Age range, widget: string }
+              - {
+                  name: grades,
+                  label: Grades,
+                  widget: list,
+                  field: { name: grade, label: Grade, widget: string },
+                }
+              - { name: timings, label: Timings, widget: string, required: false }
+              - { name: summary, label: Summary, widget: text }
+              - {
+                  name: description,
+                  label: Description,
+                  widget: list,
+                  field: { name: text, label: Paragraph, widget: text },
+                }
+              - {
+                  name: subjects,
+                  label: Subjects,
+                  widget: list,
+                  field: { name: subject, label: Subject, widget: string },
+                }
+              - name: highlights
+                label: Highlights (three)
+                widget: list
+                fields:
+                  - { name: icon, label: Icon, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+              - { name: image, label: Image, widget: image }
+
+      - name: curriculum
+        label: Curriculum
+        file: content/academics/curriculum.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - { name: medium, label: Medium of instruction, widget: text }
+          - name: boards
+            label: Boards
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: applies, label: Applies to, widget: string }
+          - name: subjectGroups
+            label: Subject groups
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: icon, label: Icon, widget: string }
+              - {
+                  name: subjects,
+                  label: Subjects,
+                  widget: list,
+                  field: { name: subject, label: Subject, widget: string },
+                }
+              - { name: note, label: Note, widget: text }
+          - name: assessment
+            label: Assessment
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: pedagogy
+            label: Teaching method
+            widget: list
+            fields:
+              - { name: icon, label: Icon, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+
+      - name: student-development
+        label: Student development
+        file: content/academics/student-development.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - name: pillars
+            label: Pillars
+            widget: list
+            fields:
+              - { name: icon, label: Icon, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: programmes
+            label: Programmes
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+
+  # ============================================================= campus life
+  - name: campus
+    label: Campus life
+    label_singular: Page
+    files:
+      - name: facilities
+        label: Facilities
+        file: content/campus/facilities.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - {
+              name: intro,
+              label: Introduction,
+              widget: list,
+              field: { name: text, label: Paragraph, widget: text },
+            }
+          - name: items
+            label: Facilities
+            widget: list
+            fields:
+              - { name: slug, label: Slug, widget: string }
+              - { name: title, label: Title, widget: string }
+              - {
+                  name: category,
+                  label: Category,
+                  widget: select,
+                  options: [infrastructure, laboratories, library, sports, arts, wellbeing],
+                }
+              - { name: icon, label: Icon, widget: string }
+              - { name: summary, label: Summary, widget: text }
+              - {
+                  name: description,
+                  label: Description,
+                  widget: list,
+                  field: { name: text, label: Paragraph, widget: text },
+                }
+              - { name: image, label: Image, widget: image }
+          - {
+              name: sports,
+              label: Sports disciplines,
+              widget: list,
+              field: { name: sport, label: Discipline, widget: string },
+            }
+
+      - name: tour
+        label: Virtual tour
+        file: content/campus/tour.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - { name: note, label: Note, widget: text }
+          - name: stops
+            label: Map stops
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: name, label: Name, widget: string }
+              - { name: x, label: 'X position (%)', widget: number, value_type: int, min: 0, max: 100 }
+              - { name: y, label: 'Y position (%)', widget: number, value_type: int, min: 0, max: 100 }
+              - { name: summary, label: Summary, widget: text }
+              - { name: detail, label: Detail, widget: text }
+              - { name: image, label: Image, widget: image }
+              - { name: href, label: Link, widget: string }
+
+  # =================================================================== media
+  - name: media
+    label: Gallery & video
+    label_singular: Collection
+    files:
+      - name: gallery
+        label: Photo gallery
+        file: content/media/gallery.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: albums
+            label: Albums
+            widget: list
+            fields:
+              - { name: slug, label: Slug, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: session, label: Session, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: cover, label: Cover image, widget: image }
+              - name: images
+                label: Photographs
+                widget: list
+                fields:
+                  - { name: src, label: Image, widget: image }
+                  - { name: alt, label: Alt text, widget: string }
+                  - { name: caption, label: Caption, widget: string }
+                  - { name: width, label: Width, widget: number, value_type: int, required: false }
+                  - { name: height, label: Height, widget: number, value_type: int, required: false }
+                  - {
+                      name: orientation,
+                      label: Orientation,
+                      widget: select,
+                      options: [landscape, portrait, square],
+                      required: false,
+                    }
+
+      - name: videos
+        label: Video gallery
+        file: content/media/videos.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: items
+            label: Videos
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: youtubeId, label: YouTube video ID, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: source, label: Source / channel, widget: string }
+              - { name: date, label: Date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+              - { name: duration, label: Duration, widget: string, required: false }
+
+  # ================================================================== events
+  - name: events
+    label: Events
+    label_singular: Event
+    folder: content/events
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+      - { name: endDate, label: End date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true, required: false }
+      - { name: time, label: Time, widget: string, required: false }
+      - { name: location, label: Location, widget: string }
+      - {
+          name: category,
+          label: Category,
+          widget: select,
+          options: [Academic, Sport, Cultural, Celebration, 'National day', Workshop, Community],
+        }
+      - { name: summary, label: Summary, widget: text }
+      - { name: image, label: Image, widget: image, required: false }
+      - {
+          name: provisional,
+          label: Date is provisional,
+          widget: boolean,
+          default: true,
+          hint: 'Shows a “provisional” badge until the circular confirms the date.',
+        }
+      - { name: body, label: Details, widget: markdown }
+
+  # ==================================================================== news
+  - name: news
+    label: News
+    label_singular: Story
+    folder: content/news
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+      - {
+          name: category,
+          label: Category,
+          widget: select,
+          options: [Academics, Sport, Culture, Community, Announcements],
+        }
+      - { name: author, label: Author, widget: string, default: School Office }
+      - {
+          name: approximateDate,
+          label: Date is approximate,
+          widget: boolean,
+          default: false,
+          hint: 'Archive stories show a session label instead of an exact date.',
+        }
+      - { name: sessionLabel, label: Session label, widget: string, required: false }
+      - { name: summary, label: Summary, widget: text }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: featured, label: Featured, widget: boolean, default: false }
+      - { name: body, label: Story, widget: markdown }
+
+  # =============================================================== documents
+  - name: documents
+    label: Circulars & downloads
+    label_singular: List
+    files:
+      - name: circulars
+        label: Circulars
+        file: content/circulars.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: note, label: Footnote, widget: text }
+          - name: items
+            label: Circulars
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: reference, label: Reference number, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: date, label: Date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+              - { name: audience, label: Audience, widget: string }
+              - { name: summary, label: Summary, widget: text }
+              - { name: file, label: PDF, widget: file, required: false }
+
+      - name: downloads
+        label: Downloads
+        file: content/downloads.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - {
+              name: categories,
+              label: Categories,
+              widget: list,
+              field: { name: category, label: Category, widget: string },
+            }
+          - name: items
+            label: Files
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: file, label: File, widget: file }
+              - { name: category, label: Category, widget: string }
+              - { name: format, label: Format, widget: string, default: PDF }
+              - { name: size, label: Size, widget: string }
+              - { name: updated, label: Updated, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+
+  # ============================================================== admissions
+  - name: admissions
+    label: Admissions
+    label_singular: Page
+    files:
+      - name: process
+        label: Admission process
+        file: content/admissions/process.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - {
+              name: intro,
+              label: Introduction,
+              widget: list,
+              field: { name: text, label: Paragraph, widget: text },
+            }
+          - name: steps
+            label: Steps
+            widget: list
+            fields:
+              - { name: step, label: Number, widget: number, value_type: int }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Short description, widget: text }
+              - {
+                  name: detail,
+                  label: Detail,
+                  widget: list,
+                  field: { name: text, label: Line, widget: text },
+                }
+          - {
+              name: documents,
+              label: Documents required,
+              widget: list,
+              field: { name: document, label: Document, widget: string },
+            }
+          - name: eligibility
+            label: Eligibility
+            widget: list
+            fields:
+              - { name: grade, label: Grade, widget: string }
+              - { name: criteria, label: Criteria, widget: string }
+          - name: cta
+            label: Call to action
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+
+      - name: fees
+        label: Fees & uniform
+        file: content/admissions/fees.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - { name: notice, label: Notice, widget: text }
+          - name: books
+            label: Book sets
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: note, label: Note, widget: text }
+              - name: rows
+                label: Rows
+                widget: list
+                fields:
+                  - { name: grade, label: Grade, widget: string }
+                  - { name: amount, label: Amount (₹), widget: number, value_type: int }
+          - name: uniform
+            label: Uniform
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: intro, label: Introduction, widget: text }
+              - name: groups
+                label: Groups
+                widget: list
+                fields:
+                  - { name: group, label: Group, widget: string }
+                  - { name: formal, label: Formal uniform, widget: text }
+                  - { name: sports, label: Sports uniform, widget: text }
+              - {
+                  name: rules,
+                  label: Rules,
+                  widget: list,
+                  field: { name: rule, label: Rule, widget: string },
+                }
+          - name: payment
+            label: Payment
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+
+  # ============================================== faqs, testimonials, awards
+  - name: shared
+    label: FAQs, testimonials & achievements
+    label_singular: List
+    files:
+      - name: faqs
+        label: FAQs
+        file: content/faqs.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: items
+            label: Questions
+            widget: list
+            fields:
+              - { name: category, label: Category, widget: string }
+              - { name: question, label: Question, widget: string }
+              - { name: answer, label: Answer, widget: text }
+
+      - name: testimonials
+        label: Testimonials
+        file: content/testimonials.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: note, label: Note, widget: text }
+          - name: items
+            label: Testimonials
+            widget: list
+            fields:
+              - { name: quote, label: Quote, widget: text }
+              - { name: name, label: Name, widget: string }
+              - { name: role, label: Role, widget: string }
+              - { name: portrait, label: Portrait, widget: image, required: false }
+              - {
+                  name: relation,
+                  label: Relation,
+                  widget: select,
+                  options: [parent, student, alumnus, faculty],
+                }
+
+      - name: achievements
+        label: Achievements
+        file: content/achievements.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - name: items
+            label: Achievements
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: year, label: Year or session, widget: string }
+              - { name: category, label: Category, widget: string }
+              - { name: level, label: Level, widget: string }
+              - { name: image, label: Image, widget: image, required: false }
+
+  # ================================================================= careers
+  - name: careers
+    label: Careers
+    label_singular: Page
+    files:
+      - name: careers
+        label: Careers & vacancies
+        file: content/careers/careers.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - {
+              name: intro,
+              label: Introduction,
+              widget: list,
+              field: { name: text, label: Paragraph, widget: text },
+            }
+          - name: whyJoin
+            label: Why join us
+            widget: list
+            fields:
+              - { name: icon, label: Icon, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: openings
+            label: Current openings
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: department, label: Department, widget: string }
+              - {
+                  name: employmentType,
+                  label: Employment type,
+                  widget: select,
+                  options: ['Full time', 'Part time', 'Contract', 'Temporary'],
+                }
+              - { name: location, label: Location, widget: string }
+              - { name: experience, label: Experience, widget: string }
+              - { name: qualification, label: Qualification, widget: string }
+              - { name: posted, label: Posted, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+              - { name: summary, label: Summary, widget: text }
+              - {
+                  name: responsibilities,
+                  label: Responsibilities,
+                  widget: list,
+                  field: { name: text, label: Responsibility, widget: text },
+                }
+          - {
+              name: howToApply,
+              label: How to apply,
+              widget: list,
+              field: { name: text, label: Step, widget: text },
+            }
+
+  # =================================================================== legal
+  - name: legal
+    label: Legal & disclosure
+    label_singular: Document
+    files:
+      - name: mandatory-disclosure
+        label: Mandatory disclosure
+        file: content/legal/mandatory-disclosure.json
+        fields:
+          - { name: eyebrow, label: Eyebrow, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: lead, label: Lead, widget: text }
+          - { name: notice, label: Notice, widget: text }
+          - name: sections
+            label: Sections
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: rows
+                label: Rows
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: value, label: Value, widget: string }
+
+      - name: privacy-policy
+        label: Privacy policy
+        file: content/legal/privacy-policy.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: updated, label: Last revised, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+          - { name: body, label: Policy, widget: markdown }
+
+      - name: terms
+        label: Terms of use
+        file: content/legal/terms.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: updated, label: Last revised, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+          - { name: body, label: Terms, widget: markdown }

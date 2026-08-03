@@ -1,0 +1,28 @@
+{
+  "eyebrow": "The institution at a glance",
+  "title": "One campus, one continuous education",
+  "description": "A child can join us at three and leave us with a degree, without ever changing schools. That continuity is the quiet advantage of the way we are built.",
+  "items": [
+    {
+      "value": 14,
+      "label": "Grade levels",
+      "detail": "Nursery through to Class XII, taught on one campus."
+    },
+    {
+      "value": 6,
+      "label": "Academic divisions",
+      "detail": "Pre-Primary, Primary, High School, Junior College, BBA and BCCA."
+    },
+    {
+      "value": 8,
+      "label": "Sports disciplines",
+      "detail": "From athletics and cricket to karate, carrom and table tennis."
+    },
+    {
+      "value": 100,
+      "suffix": "%",
+      "label": "Campus under CCTV",
+      "detail": "Monitored entry, stationed guards and photo ID for every student."
+    }
+  ]
+}

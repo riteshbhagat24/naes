@@ -1,0 +1,77 @@
+{
+  "eyebrow": "Statutory information",
+  "title": "Mandatory Disclosure",
+  "lead": "Information published in the interest of transparency for parents, applicants and the public.",
+  "notice": "This page carries the information the school publishes openly. Certified copies of registration and recognition documents are held at the school office and are available for inspection by any parent or applicant on request. Where a field below is marked as available on request, it is issued in writing by the office rather than published online.",
+  "sections": [
+    {
+      "title": "General information",
+      "rows": [
+        { "label": "Name of the school", "value": "New Apostolic English High School" },
+        { "label": "Junior college", "value": "Dr. Bower Apostolic Junior College" },
+        { "label": "Managing body", "value": "National Apostolic Church Education Society" },
+        { "label": "Founder", "value": "Respected Late Bishop Adv. Dr. Vincent S. Bower" },
+        { "label": "Principal", "value": "Ms. Vinita V. Bower" },
+        { "label": "Head Mistress", "value": "Dr. Vandana P. Benjamin" },
+        { "label": "Medium of instruction", "value": "English" },
+        { "label": "Board / syllabus", "value": "Maharashtra State Board; CBSE-informed pattern in the lower classes" },
+        { "label": "Grades offered", "value": "Nursery to Class XII, plus BBA and BCCA degree programmes" },
+        { "label": "Type of school", "value": "Co-educational, English medium, day school" }
+      ]
+    },
+    {
+      "title": "Contact & location",
+      "rows": [
+        { "label": "Address", "value": "48, Kukde Layout, Opposite Railway Police Headquarters, Rameshwari Road, Nagpur, Maharashtra 440027" },
+        { "label": "Telephone", "value": "+91 96577 66740" },
+        { "label": "Email", "value": "naehs_bajc@yahoo.com" },
+        { "label": "Website", "value": "www.apostoliceducation.org" },
+        { "label": "Office hours", "value": "Monday to Saturday, 9:00 AM to 4:00 PM" }
+      ]
+    },
+    {
+      "title": "Academic session & timings",
+      "rows": [
+        { "label": "Current academic session", "value": "2026–27" },
+        { "label": "Pre-Primary", "value": "8:00 AM – 11:00 AM" },
+        { "label": "Primary School", "value": "7:00 AM – 11:30 AM" },
+        { "label": "High School & Junior College", "value": "12:00 PM – 5:00 PM" },
+        { "label": "Working days", "value": "Monday to Saturday, as per the academic calendar" }
+      ]
+    },
+    {
+      "title": "Infrastructure",
+      "rows": [
+        { "label": "Classrooms", "value": "Technology-enabled smart classrooms across all sections" },
+        { "label": "Laboratories", "value": "Physics laboratory; computer laboratory" },
+        { "label": "Library", "value": "Yes — reading periods timetabled for the lower grades" },
+        { "label": "Playground", "value": "Yes — open ground, covered hall and basement" },
+        { "label": "Sports facilities", "value": "Basketball, volleyball, cricket court and nets, athletics track, table tennis, karate, carrom, gymnasium" },
+        { "label": "Canteen", "value": "Yes — healthy canteen facility on the premises" },
+        { "label": "Drinking water", "value": "Available on every floor" },
+        { "label": "CCTV surveillance", "value": "Yes — full campus coverage" }
+      ]
+    },
+    {
+      "title": "Safety & child protection",
+      "rows": [
+        { "label": "Security personnel", "value": "Guards stationed at the gate and inside the premises" },
+        { "label": "Student identity cards", "value": "Issued to every student, recording parents' details" },
+        { "label": "Collection protocol", "value": "Only an authorised person may interact with or collect a child" },
+        { "label": "Section attendants", "value": "Two attendants for Pre-Primary; two attendants for each higher section" },
+        { "label": "Fire safety", "value": "Equipment maintained and inspected as per requirement" }
+      ]
+    },
+    {
+      "title": "Documents available on request",
+      "rows": [
+        { "label": "Certificate of registration of the Society", "value": "Available for inspection at the school office" },
+        { "label": "Recognition certificate", "value": "Available for inspection at the school office" },
+        { "label": "Fee structure for the current session", "value": "Issued in writing at admission; available from the office" },
+        { "label": "Building and fire safety certificates", "value": "Available for inspection at the school office" },
+        { "label": "Staff list with qualifications", "value": "Available for inspection at the school office" },
+        { "label": "Annual academic calendar", "value": "Published on this website and issued by circular" }
+      ]
+    }
+  ]
+}

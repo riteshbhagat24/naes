@@ -1,0 +1,96 @@
+{
+  "eyebrow": "Curriculum",
+  "title": "What we teach, and how we know it is working",
+  "lead": "The school follows the Maharashtra State Board syllabus, with a CBSE-informed pattern used in the lower classes to build a stronger foundation before the board years.",
+  "boards": [
+    {
+      "title": "Maharashtra State Board",
+      "description": "The syllabus followed through High School and Junior College, culminating in the Class X and Class XII board examinations.",
+      "applies": "Grades VI – XII"
+    },
+    {
+      "title": "CBSE-informed foundation",
+      "description": "The lower classes are taught on a CBSE pattern, which strengthens language, conceptual mathematics and structured science before the board syllabus begins.",
+      "applies": "Pre-Primary – Grade V"
+    }
+  ],
+  "medium": "English is the medium of instruction throughout the institution. Marathi and Hindi are taught as languages, with Sanskrit available as an option in the senior grades.",
+  "subjectGroups": [
+    {
+      "title": "Languages",
+      "icon": "languages",
+      "subjects": ["English", "Marathi", "Hindi", "Sanskrit (optional, senior grades)"],
+      "note": "Language teaching is sequenced so that reading fluency arrives before comprehension is assessed."
+    },
+    {
+      "title": "Mathematics",
+      "icon": "calculator",
+      "subjects": ["Number & arithmetic", "Algebra", "Geometry", "Statistics", "Mathematics & Statistics (Junior College)"],
+      "note": "Taught concrete → pictorial → abstract, with problem practice in every lesson."
+    },
+    {
+      "title": "Science & Technology",
+      "icon": "flask-conical",
+      "subjects": ["Environmental Science (Primary)", "Physics", "Chemistry", "Biology", "Information Technology"],
+      "note": "Practical work is timetabled, not optional. The physics and computer laboratories are in weekly use."
+    },
+    {
+      "title": "Social Studies",
+      "icon": "globe",
+      "subjects": ["History", "Civics", "Geography", "Economics (Junior College)"],
+      "note": "Taught with maps, sources and local field study wherever the topic allows it."
+    },
+    {
+      "title": "Commerce",
+      "icon": "receipt",
+      "subjects": ["Book-keeping & Accountancy", "Organisation of Commerce", "Economics", "Secretarial Practice"],
+      "note": "The Junior College commerce stream, feeding directly into our BBA and BCCA programmes."
+    },
+    {
+      "title": "Arts, Sport & Life Skills",
+      "icon": "palette",
+      "subjects": ["Art & craft", "Music & theatre", "Physical education", "Value education", "Computer literacy"],
+      "note": "Given real time in the week. These are the subjects that build the personality the crest asks for."
+    }
+  ],
+  "assessment": [
+    {
+      "title": "Continuous assessment",
+      "description": "Class work, homework, oral responses and practical journals are recorded through the term, so a report is never a surprise."
+    },
+    {
+      "title": "Unit tests & terminal examinations",
+      "description": "Regular written assessment, marked against the board pattern from the middle school upward."
+    },
+    {
+      "title": "Practical & project work",
+      "description": "Supervised laboratory work, exhibitions and project submissions, assessed on method as well as result."
+    },
+    {
+      "title": "Parent–teacher meetings",
+      "description": "Scheduled each term, with the class teacher and subject teachers available to discuss the whole picture."
+    }
+  ],
+  "pedagogy": [
+    {
+      "icon": "activity",
+      "title": "Activity-based learning",
+      "description": "Interactive and hands-on methods across every section, so understanding is built rather than recited."
+    },
+    {
+      "icon": "monitor",
+      "title": "Smart classrooms",
+      "description": "Technology-enabled teaching spaces used for demonstration, animation and revision."
+    },
+    {
+      "icon": "users",
+      "title": "Individual attention",
+      "description": "Teachers are expected to know each child's pace, not only the class average."
+    },
+    {
+      "icon": "heart-handshake",
+      "title": "Value education",
+      "description": "Ethics, empathy and environmental responsibility taught explicitly and practised publicly."
+    }
+  ]
+}

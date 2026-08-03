@@ -1,0 +1,671 @@
+{
+  "eyebrow": "Gallery",
+  "title": "A school year, photographed",
+  "description": "Every photograph here was taken on our campus. Albums are curated by the school office and updated each session.",
+  "albums": [
+    {
+      "slug": "cultural-activities",
+      "title": "Cultural Activities",
+      "session": "2023–24",
+      "description": "The annual cultural calendar, section by section — the days when the whole school stops teaching and starts performing.",
+      "cover": "/images/gallery/patriotic-singing-medal.jpg",
+      "images": [
+        {
+          "src": "/images/gallery/pre-primary-banana-day.jpg",
+          "alt": "Pre-primary children taking part in a themed activity day in KG-2",
+          "caption": "Pre-Primary cultural activity, session 2023–24",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/primary-teachers-day.jpg",
+          "alt": "Primary school students and teachers at the Teachers' Day celebration",
+          "caption": "Teachers' Day, Primary School",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/patriotic-singing-medal.jpg",
+          "alt": "Students with medals and participation certificates from a patriotic singing competition",
+          "caption": "Patriotic singing competition — medal and certificate",
+          "width": 1600,
+          "height": 727,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/junior-college-performance.jpg",
+          "alt": "Junior college students during a cultural performance",
+          "caption": "Junior College cultural activity, session 2023–24",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/arts-and-crafts.jpg",
+          "alt": "Student artwork and craft displayed at the school",
+          "caption": "Art & craft display",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "annual-productions",
+      "title": "Annual Productions",
+      "session": "Recent sessions",
+      "description": "Full-scale plays rehearsed and staged by students across all four sections of the school.",
+      "cover": "/images/gallery/annual-play-aasman-se-gira.jpg",
+      "images": [
+        {
+          "src": "/images/gallery/annual-play-aasman-se-gira.jpg",
+          "alt": "Students performing the annual production Aasman Se Gira",
+          "caption": "Aasman Se Gira",
+          "width": 1600,
+          "height": 477,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/annual-play-choo-manter.jpg",
+          "alt": "Students performing the annual production Choo Manter",
+          "caption": "Choo Manter",
+          "width": 1600,
+          "height": 1070,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/annual-play-laher-badlav-ki.jpg",
+          "alt": "Students performing the annual production Laher Badlav Ki",
+          "caption": "Laher Badlav Ki",
+          "width": 1600,
+          "height": 1389,
+          "orientation": "square"
+        }
+      ]
+    },
+    {
+      "slug": "festivals",
+      "title": "Festivals & Celebrations",
+      "session": "Recent sessions",
+      "description": "Diwali, Christmas and the national days — marked across every section of the school.",
+      "cover": "/images/gallery/diwali-celebration.jpg",
+      "images": [
+        {
+          "src": "/images/gallery/diwali-celebration.jpg",
+          "alt": "Students celebrating Diwali at school",
+          "caption": "Diwali celebration",
+          "width": 1600,
+          "height": 1201,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/pre-diwali-celebration.jpg",
+          "alt": "Pre-Diwali celebration on the school campus",
+          "caption": "Pre-Diwali celebration",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/christmas-celebration.jpg",
+          "alt": "Students during the school Christmas celebration",
+          "caption": "Christmas celebration",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/christmas-celebration-2.jpg",
+          "alt": "Christmas celebration on the school campus",
+          "caption": "Christmas celebration",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/tree-plantation-drive.jpg",
+          "alt": "Students planting saplings during the school plantation drive",
+          "caption": "Plantation drive",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "sport",
+      "title": "Sport",
+      "session": "Recent sessions",
+      "description": "Eight disciplines, one field, and the inter-school fixtures our teams have travelled for.",
+      "cover": "/images/gallery/state-level-throwball.jpg",
+      "images": [
+        {
+          "src": "/images/gallery/state-level-throwball.jpg",
+          "alt": "High school students who represented the school at a state-level throwball fixture",
+          "caption": "State-level throwball — high school",
+          "width": 1600,
+          "height": 728,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/carrom-high-school.jpg",
+          "alt": "High school students competing in a carrom fixture",
+          "caption": "Carrom, high school",
+          "width": 1600,
+          "height": 720,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/campus/campus-1.jpg",
+          "alt": "Students playing carrom in the school indoor games room",
+          "caption": "Indoor games",
+          "width": 1800,
+          "height": 1353,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/campus/campus-2.jpg",
+          "alt": "Students on the school campus during a sports session",
+          "caption": "Sports session",
+          "width": 1800,
+          "height": 1012,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/campus/campus-3.jpg",
+          "alt": "The school campus and grounds",
+          "caption": "Campus grounds",
+          "width": 1800,
+          "height": 1012,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/campus/campus-4.jpg",
+          "alt": "Students and staff on the school campus",
+          "caption": "On campus",
+          "width": 1800,
+          "height": 1350,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/campus/campus-5.jpg",
+          "alt": "The school campus during a school-day activity",
+          "caption": "On campus",
+          "width": 1125,
+          "height": 2000,
+          "orientation": "portrait"
+        }
+      ]
+    },
+    {
+      "slug": "science-and-technology",
+      "title": "Science, Robotics & Exhibitions",
+      "session": "2023–24",
+      "description": "Laboratory work, robotics workshops and the exhibitions where the year's practical work goes on public display.",
+      "cover": "/images/facilities/science-exhibition.jpg",
+      "images": [
+        {
+          "src": "/images/facilities/science-exhibition.jpg",
+          "alt": "Students presenting models at the school science and tour exhibition",
+          "caption": "Science & tour exhibition",
+          "width": 1600,
+          "height": 1184,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/science-exhibition-2.jpg",
+          "alt": "Exhibits and student presenters at the school science exhibition",
+          "caption": "Science exhibition",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/robotics-workshop.jpg",
+          "alt": "High school students at a robotics workshop",
+          "caption": "Robotics workshop, high school",
+          "width": 1600,
+          "height": 1203,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/robotics-workshop-2.jpg",
+          "alt": "Students building and testing at the robotics workshop",
+          "caption": "Robotics workshop",
+          "width": 1600,
+          "height": 1203,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/physics-laboratory.jpg",
+          "alt": "Students carrying out a supervised experiment in the science laboratory",
+          "caption": "Science laboratory",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/computer-lab.jpg",
+          "alt": "Junior college students performing practical work in the computer laboratory",
+          "caption": "Computer laboratory — junior college practicals",
+          "width": 1575,
+          "height": 1800,
+          "orientation": "square"
+        },
+        {
+          "src": "/images/facilities/computer-lab-2.jpg",
+          "alt": "Junior college students at workstations in the computer laboratory",
+          "caption": "Computer laboratory",
+          "width": 1350,
+          "height": 1800,
+          "orientation": "portrait"
+        }
+      ]
+    },
+    {
+      "slug": "campus-and-facilities",
+      "title": "Campus & Facilities",
+      "session": "Current",
+      "description": "The buildings, the ground, the library and the canteen — the places the school day actually happens in.",
+      "cover": "/images/facilities/playground.jpg",
+      "images": [
+        {
+          "src": "/images/facilities/playground.jpg",
+          "alt": "The school playground and covered hall",
+          "caption": "Playground, hall & basement",
+          "width": 1600,
+          "height": 1094,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/canteen.jpg",
+          "alt": "The school canteen where students take their break",
+          "caption": "Healthy canteen",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/facilities/library.jpg",
+          "alt": "The school library",
+          "caption": "Library",
+          "width": 1600,
+          "height": 1596,
+          "orientation": "square"
+        },
+        {
+          "src": "/images/academics/classroom-1.jpg",
+          "alt": "A classroom at New Apostolic English School",
+          "caption": "Classroom",
+          "width": 1600,
+          "height": 720,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-2.jpg",
+          "alt": "Students in a classroom during a lesson",
+          "caption": "In class",
+          "width": 1600,
+          "height": 898,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-3.jpg",
+          "alt": "A lesson in progress at the school",
+          "caption": "In class",
+          "width": 1600,
+          "height": 898,
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "school-life",
+      "title": "School Life",
+      "session": "Recent sessions",
+      "description": "Assemblies, welcome mornings, class groups and the ordinary days that make up a school year.",
+      "cover": "/images/hero/hero-1.jpg",
+      "images": [
+        {
+          "src": "/images/hero/hero-1.jpg",
+          "alt": "Pre-primary and primary students with their teachers at a welcome morning",
+          "caption": "Welcome morning",
+          "width": 2000,
+          "height": 1123,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/primary-students.jpg",
+          "alt": "Primary school students of New Apostolic English School",
+          "caption": "Primary School",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/high-school-students.jpg",
+          "alt": "High school students of New Apostolic English High School",
+          "caption": "High School",
+          "width": 1600,
+          "height": 1263,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/junior-college-students.jpg",
+          "alt": "Students of Dr. Bower Apostolic Junior College",
+          "caption": "Junior College",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/people/staff-pre-primary.jpg",
+          "alt": "Pre-primary staff members of the school",
+          "caption": "Pre-Primary staff",
+          "width": 1400,
+          "height": 1050,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/people/staff-primary-2024-25.jpg",
+          "alt": "Primary teaching staff members, session 2024–25",
+          "caption": "Primary teaching staff, 2024–25",
+          "width": 1400,
+          "height": 1050,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/people/staff-high-school-2024-25.jpg",
+          "alt": "High school teaching staff, session 2024–25",
+          "caption": "High school teaching staff, 2024–25",
+          "width": 1400,
+          "height": 894,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/people/staff-teachers-day.jpg",
+          "alt": "Primary school staff at the Teachers' Day celebration",
+          "caption": "Teachers' Day, staff",
+          "width": 1400,
+          "height": 700,
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "archive",
+      "title": "The Archive",
+      "session": "2022 – 2025",
+      "description": "Photographs collected across recent sessions — assemblies, activities, classrooms and the days in between.",
+      "cover": "/images/gallery/campus-moment-1.jpg",
+      "images": [
+        {
+          "src": "/images/gallery/campus-moment-1.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-2.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-3.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-4.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-5.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-6.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-7.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1182,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-8.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 901,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-9.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 745,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-10.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 720,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-11.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 818,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-12.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 753,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-13.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1364,
+          "height": 1800,
+          "orientation": "portrait"
+        },
+        {
+          "src": "/images/gallery/campus-moment-14.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 987,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-15.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1145,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-16.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-17.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-18.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-19.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 960,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-20.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-21.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-22.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1075,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/campus-moment-23.jpg",
+          "alt": "A photograph from the New Apostolic English High School archive",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 791,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/collage-1.jpg",
+          "alt": "A collage of photographs from a school activity",
+          "caption": "School activity collage",
+          "width": 1600,
+          "height": 1600,
+          "orientation": "square"
+        },
+        {
+          "src": "/images/gallery/collage-2.jpg",
+          "alt": "A collage of photographs from a school activity",
+          "caption": "School activity collage",
+          "width": 1600,
+          "height": 1130,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/gallery/collage-3.jpg",
+          "alt": "A collage of photographs from a school activity",
+          "caption": "School activity collage",
+          "width": 1600,
+          "height": 1600,
+          "orientation": "square"
+        },
+        {
+          "src": "/images/gallery/collage-4.jpg",
+          "alt": "A collage of photographs from a school activity",
+          "caption": "School activity collage",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-4.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-5.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1200,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-6.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-7.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 720,
+          "orientation": "landscape"
+        },
+        {
+          "src": "/images/academics/classroom-8.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 1487,
+          "orientation": "square"
+        },
+        {
+          "src": "/images/academics/classroom-9.jpg",
+          "alt": "A photograph from a school day at New Apostolic English School",
+          "caption": "From the school archive",
+          "width": 1600,
+          "height": 899,
+          "orientation": "landscape"
+        }
+      ]
+    }
+  ]
+}

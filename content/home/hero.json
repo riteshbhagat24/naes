@@ -1,0 +1,37 @@
+{
+  "eyebrow": "Nagpur · Nursery to Class XII · English medium",
+  "headlineLines": ["A school", "with a", "difference"],
+  "subheadline": "New Apostolic English High School & Dr. Bower Apostolic Junior College",
+  "intro": "For families across South Nagpur, we teach children to think for themselves, to work with care, and to hold to the one line written across our crest — love thy neighbour as thyself.",
+  "primaryCta": { "label": "Begin an admission enquiry", "href": "/admissions/enquiry" },
+  "secondaryCta": { "label": "Take the campus tour", "href": "/campus-life/tour" },
+  "scrollHint": "Scroll to explore",
+  "videoUrl": "",
+  "slides": [
+    {
+      "src": "/images/hero/hero-1.jpg",
+      "alt": "Pre-primary and primary students gathered with their teachers at the school entrance on a welcome morning",
+      "caption": "Welcome morning, Pre-Primary section"
+    },
+    {
+      "src": "/images/academics/high-school-students.jpg",
+      "alt": "High school students of New Apostolic English High School assembled in the school courtyard",
+      "caption": "High School, session 2024–25"
+    },
+    {
+      "src": "/images/facilities/physics-laboratory.jpg",
+      "alt": "Students carrying out an experiment under supervision in the school science laboratory",
+      "caption": "Science laboratory"
+    },
+    {
+      "src": "/images/gallery/state-level-throwball.jpg",
+      "alt": "School throwball team with their coach after a state-level fixture",
+      "caption": "State-level throwball"
+    },
+    {
+      "src": "/images/hero/hero-3.jpg",
+      "alt": "Students of the school during a morning assembly on the campus grounds",
+      "caption": "Morning assembly"
+    }
+  ]
+}

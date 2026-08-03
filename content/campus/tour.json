@@ -1,0 +1,88 @@
+{
+  "eyebrow": "Virtual tour",
+  "title": "Walk the campus before you visit it",
+  "lead": "Select a location on the plan to see what happens there. Nothing on this tour is a rendering — every photograph was taken on our own campus.",
+  "note": "A guided tour of the real campus can be arranged any working morning. Call the school office on +91 96577 66740 to book a time.",
+  "stops": [
+    {
+      "id": "entrance",
+      "name": "Main entrance & reception",
+      "x": 18,
+      "y": 74,
+      "summary": "The gate on Kukde Layout, opposite the Railway Police Headquarters — guarded, monitored and the single point of entry.",
+      "detail": "Every visitor signs in at reception. Guards are stationed at the gate and within the premises, and only an authorised person named on a student's record may collect a child.",
+      "image": "/images/hero/hero-1.jpg",
+      "href": "/campus-life/facilities"
+    },
+    {
+      "id": "playground",
+      "name": "Playground & hall",
+      "x": 44,
+      "y": 30,
+      "summary": "Morning assembly, physical education, athletics practice and the annual Apostolic Sports meet.",
+      "detail": "The open ground is the centre of the school day. The covered hall and basement extend it through the monsoon and the examination season, taking rehearsals, indoor games and large written examinations.",
+      "image": "/images/facilities/playground.jpg",
+      "href": "/campus-life/sports"
+    },
+    {
+      "id": "physics-lab",
+      "name": "Physics laboratory",
+      "x": 70,
+      "y": 46,
+      "summary": "Timetabled practical work — apparatus, readings, observation and error.",
+      "detail": "Students set up their own apparatus and account for their own error, which is a different skill from reproducing a result. Practical journals are checked as carefully as written work.",
+      "image": "/images/facilities/physics-laboratory.jpg",
+      "href": "/campus-life/laboratories"
+    },
+    {
+      "id": "computer-lab",
+      "name": "Computer laboratory",
+      "x": 78,
+      "y": 66,
+      "summary": "The working home of the junior college practical syllabus and the BCCA programme.",
+      "detail": "Supervised practical sessions run through the year, with journals maintained as the work is done. The same laboratory hosts the robotics workshops for high school classes.",
+      "image": "/images/facilities/computer-lab.jpg",
+      "href": "/campus-life/laboratories"
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "x": 58,
+      "y": 78,
+      "summary": "Reading periods for the lower grades, supervised private study for the seniors.",
+      "detail": "The collection covers fiction, general knowledge, the sciences and the languages taught in school. Borrowing is timetabled early so that reading becomes a habit rather than an instruction.",
+      "image": "/images/facilities/library.jpg",
+      "href": "/campus-life/library"
+    },
+    {
+      "id": "canteen",
+      "name": "Healthy canteen",
+      "x": 30,
+      "y": 52,
+      "summary": "A complete, healthy diet during the school day — and a proper break in which to eat it.",
+      "detail": "Prepared and served on the premises. Also, deliberately, the place where friendships across classes actually get made.",
+      "image": "/images/facilities/canteen.jpg",
+      "href": "/campus-life/facilities"
+    },
+    {
+      "id": "classrooms",
+      "name": "Smart classrooms",
+      "x": 62,
+      "y": 18,
+      "summary": "Technology-enabled teaching spaces, used every day rather than reserved for demonstrations.",
+      "detail": "Digital boards let a diagram be drawn, animated, annotated and revisited — and let a teacher return to exactly the frame a student did not follow.",
+      "image": "/images/academics/classroom-1.jpg",
+      "href": "/campus-life/infrastructure"
+    },
+    {
+      "id": "arts",
+      "name": "Arts & rehearsal space",
+      "x": 26,
+      "y": 20,
+      "summary": "Where the annual production is built, and where a quiet child often finds their voice.",
+      "detail": "Art and craft run from Pre-Primary upward. The annual cultural programme stages full productions rehearsed by students across all four sections.",
+      "image": "/images/gallery/arts-and-crafts.jpg",
+      "href": "/campus-life/arts"
+    }
+  ]
+}

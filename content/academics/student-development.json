@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Student development",
+  "title": "The part of school that does not appear on the report card",
+  "lead": "Confidence, responsibility and judgement are not by-products of a good education. They are taught, and we teach them on purpose.",
+  "pillars": [
+    {
+      "icon": "mic",
+      "title": "Voice & stage",
+      "description": "Every student performs. Annual plays, patriotic singing, elocution and assembly duty give each child repeated, low-stakes practice at standing in front of people — long before it matters."
+    },
+    {
+      "icon": "users",
+      "title": "Responsibility",
+      "description": "Class monitors, house duties, event roles and junior mentoring. Students are given tasks that other people genuinely depend on being done."
+    },
+    {
+      "icon": "leaf",
+      "title": "Environment & service",
+      "description": "Plantation drives, campus green spaces and community days. Environmental responsibility is treated as a habit rather than a topic."
+    },
+    {
+      "icon": "compass",
+      "title": "Career guidance",
+      "description": "Structured counselling for senior students: stream implications, entrance routes, application timelines and honest conversations about aptitude."
+    },
+    {
+      "icon": "brain",
+      "title": "Study skills",
+      "description": "Note-making, revision planning, time management and examination technique taught explicitly from the middle school upward."
+    },
+    {
+      "icon": "heart-handshake",
+      "title": "Wellbeing",
+      "description": "Attentive class teachers, a supervised canteen, an open door for parents, and staff who are expected to notice when something has changed."
+    }
+  ],
+  "programmes": [
+    {
+      "title": "Annual cultural programme",
+      "description": "Full-scale productions rehearsed and staged by students across all four sections — recent titles include Aasman Se Gira, Choo Manter and Laher Badlav Ki."
+    },
+    {
+      "title": "Science & tour exhibitions",
+      "description": "Students design, build and present working models and study-tour findings to parents and visiting schools."
+    },
+    {
+      "title": "Robotics workshops",
+      "description": "Practical sessions for high school classes covering sensing, control and simple autonomous behaviour."
+    },
+    {
+      "title": "Inter-school competition",
+      "description": "Entries in sport, singing, elocution and quiz — including state-level representation in throwball."
+    },
+    {
+      "title": "Festival & national days",
+      "description": "Diwali, Christmas, Independence Day, Republic Day and Teachers' Day marked across the whole school."
+    },
+    {
+      "title": "Study tours",
+      "description": "Supervised educational visits that connect the syllabus to places, industries and institutions in and around Nagpur."
+    }
+  ]
+}

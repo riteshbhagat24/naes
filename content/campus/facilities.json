@@ -1,0 +1,141 @@
+{
+  "eyebrow": "Campus & facilities",
+  "title": "A peaceful, well-maintained campus built around the working day",
+  "lead": "A perfect blend of academics, sport and cultural activity — with the infrastructure, laboratories and green surroundings that make a dynamic learning atmosphere possible.",
+  "intro": [
+    "The campus sits at 48 Kukde Layout in Rameshwari, opposite the Railway Police Headquarters — a location that is central enough to reach easily and quiet enough to work in.",
+    "Everything here is arranged around the school day rather than around a brochure photograph. The laboratories are next to the classrooms that use them. The canteen is where children can actually reach it in a short break. The hall, the basement and the playground carry assembly, rehearsal, examinations and sport in turn."
+  ],
+  "items": [
+    {
+      "slug": "playground",
+      "title": "Playground, hall & basement",
+      "category": "infrastructure",
+      "icon": "landmark",
+      "summary": "The open ground and covered hall that carry assembly, sport, rehearsal and examinations.",
+      "description": [
+        "The playground is the centre of the school day — morning assembly, physical education periods, athletics practice and the annual sports meet all happen here.",
+        "The covered hall and basement extend that space through the monsoon and the examination season: they take rehearsals for the annual cultural programme, inter-house competition, indoor games and large written examinations without disrupting timetabled classes."
+      ],
+      "image": "/images/facilities/playground.jpg"
+    },
+    {
+      "slug": "physics-laboratory",
+      "title": "Physics laboratory",
+      "category": "laboratories",
+      "icon": "flask-conical",
+      "summary": "Where science stops being a set of definitions and becomes something a student has actually done.",
+      "description": [
+        "The physics laboratory is timetabled, not occasional. Students set up apparatus, take readings, record observations and account for their own error — which is a different skill from reproducing a result.",
+        "Experiments are supervised throughout, and practical journals are checked as carefully as written work. It is the single facility that most changes how our students answer science questions in a board examination."
+      ],
+      "image": "/images/facilities/physics-laboratory.jpg"
+    },
+    {
+      "slug": "computer-laboratory",
+      "title": "Computer laboratory",
+      "category": "laboratories",
+      "icon": "laptop",
+      "summary": "The working home of the junior college practical syllabus, and of computer literacy across the school.",
+      "description": [
+        "Junior college students carry out their practical papers here under supervision, with journals maintained through the year rather than assembled in the final week.",
+        "The same laboratory supports computer literacy from the primary grades upward, and hosts the applied sessions of our BCCA degree programme."
+      ],
+      "image": "/images/facilities/computer-lab.jpg"
+    },
+    {
+      "slug": "robotics",
+      "title": "Robotics workshops",
+      "category": "laboratories",
+      "icon": "cpu",
+      "summary": "Hands-on sessions where high school students build, wire and program something that then has to work.",
+      "description": [
+        "Robotics workshops run for high school classes through the session, covering sensing, control and simple autonomous behaviour.",
+        "They are deliberately practical: a design that looks right on paper and fails on the floor teaches more in one afternoon than a chapter does in a week."
+      ],
+      "image": "/images/facilities/robotics-workshop.jpg"
+    },
+    {
+      "slug": "library",
+      "title": "Library",
+      "category": "library",
+      "icon": "book-open",
+      "summary": "A quiet room at the centre of the school, and the habit it is there to build.",
+      "description": [
+        "The library supports reading for pleasure alongside reference and project work, with a collection covering fiction, general knowledge, the sciences and the languages taught in school.",
+        "Reading periods are timetabled for the younger grades so that borrowing becomes a habit rather than an instruction, and senior students use the space for supervised private study and project research."
+      ],
+      "image": "/images/facilities/library.jpg"
+    },
+    {
+      "slug": "canteen",
+      "title": "Healthy canteen",
+      "category": "wellbeing",
+      "icon": "utensils",
+      "summary": "A canteen facility for students to have a complete, healthy diet — and a proper break in which to eat it.",
+      "description": [
+        "The canteen is there so that children eat well during the school day: a complete and healthy diet, prepared and served on the premises.",
+        "It is also, deliberately, a good time for students to refresh themselves and enjoy the environment — the part of the day where friendships across classes actually get made."
+      ],
+      "image": "/images/facilities/canteen.jpg"
+    },
+    {
+      "slug": "smart-classrooms",
+      "title": "Smart classrooms",
+      "category": "infrastructure",
+      "icon": "monitor",
+      "summary": "Technology-enabled teaching spaces used every day, not reserved for demonstrations.",
+      "description": [
+        "Digital teaching boards allow a diagram to be drawn, animated, annotated and revisited — and allow a teacher to return to exactly the frame a student did not follow.",
+        "The classrooms themselves are kept simple and well-lit, arranged so that a teacher can reach every desk within a few steps."
+      ],
+      "image": "/images/academics/classroom-1.jpg"
+    },
+    {
+      "slug": "sports",
+      "title": "Sports facilities",
+      "category": "sports",
+      "icon": "trophy",
+      "summary": "Eight disciplines, from the athletics track to the carrom board.",
+      "description": [
+        "Basketball court, volleyball court, cricket court and nets, an athletics track, table tennis, karate, carrom and a gymnasium — enough breadth that most children find something they are good at.",
+        "Physical education is timetabled for every grade, and inter-house competition runs through the year, culminating in the annual Apostolic Sports meet on the school ground."
+      ],
+      "image": "/images/campus/campus-1.jpg"
+    },
+    {
+      "slug": "arts",
+      "title": "Arts, music & theatre",
+      "category": "arts",
+      "icon": "palette",
+      "summary": "Where the annual production is rehearsed, and where a quiet child often finds their voice.",
+      "description": [
+        "Art and craft run from Pre-Primary upward, and the school's annual cultural programme stages full productions rehearsed by students across all four sections.",
+        "Music, patriotic singing and elocution are entered for inter-school competition, and our singers have returned with medals and participation certificates."
+      ],
+      "image": "/images/gallery/arts-and-crafts.jpg"
+    },
+    {
+      "slug": "safety",
+      "title": "Safety & security",
+      "category": "wellbeing",
+      "icon": "shield-check",
+      "summary": "Full CCTV coverage, guards at the gate and inside, photo ID for every student.",
+      "description": [
+        "The school is under CCTV surveillance, with several guards stationed at the gate and within the premises.",
+        "Each student carries an identity card recording their parents' details, and only an authorised person is permitted to interact with or collect a child. Two attendants are assigned to the Pre-Primary section, with two attendants for each of the higher sections."
+      ],
+      "image": "/images/campus/campus-3.jpg"
+    }
+  ],
+  "sports": [
+    "Basketball court",
+    "Volleyball court",
+    "Cricket court & nets",
+    "Athletics track",
+    "Table tennis",
+    "Karate",
+    "Carrom",
+    "Gymnasium"
+  ]
+}

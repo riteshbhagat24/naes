@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "label": "Admissions",
+  "message": "Admissions are open for the 2026–27 academic session, Nursery to Class XII.",
+  "linkText": "Begin an enquiry",
+  "linkHref": "/admissions/enquiry",
+  "tone": "primary"
+}

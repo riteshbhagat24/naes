@@ -1,0 +1,39 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Content Manager — New Apostolic English High School</title>
+<link rel="icon" href="/brand/logo-crest-192.png" />
+<style>
+  :root {
+    color-scheme: light;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #fbf8f6;
+  }
+</style>
+
+<script>
+  // Manual init so the OAuth base URL can follow whichever origin the CMS was
+  // opened from — production domain today, a Vercel preview tomorrow.
+  window.CMS_MANUAL_INIT = true
+</script>
+
+<script src="https://unpkg.com/decap-cms@^3.8.3/dist/decap-cms.js"></script>
+
+<script>
+  // Everything that depends on the deployed address is resolved here rather
+  // than hard-coded in config.yml: the OAuth base URL, the "View live" link and
+  // the preview links. The CMS therefore works unchanged on the Vercel address
+  // during client review and on the school's own domain afterwards.
+  window.CMS.init({
+    config: {
+      backend: {
+        base_url: window.location.origin,
+      },
+      site_url: window.location.origin,
+      display_url: window.location.origin,
+    },
+  })
+</script>

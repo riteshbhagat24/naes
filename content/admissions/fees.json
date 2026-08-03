@@ -1,0 +1,73 @@
+{
+  "eyebrow": "Fees & uniform",
+  "title": "What a school year costs, set out plainly",
+  "lead": "The tuition fee structure for each academic session is issued by the school office and shared with every family at admission. The book and uniform requirements below are published here so there are no surprises.",
+  "notice": "The figures below are the approximate cost of the book set for each grade. The tuition fee structure for the 2026–27 session is available from the school office on +91 96577 66740, and is provided in writing at the time of admission.",
+  "books": {
+    "title": "Approximate cost of books",
+    "note": "Indicative amounts in Indian Rupees for a complete book set, as published by the school.",
+    "rows": [
+      { "grade": "LKG", "amount": 2200 },
+      { "grade": "UKG", "amount": 3200 },
+      { "grade": "Grade I", "amount": 3500 },
+      { "grade": "Grade II", "amount": 3800 },
+      { "grade": "Grade III", "amount": 4000 },
+      { "grade": "Grade IV", "amount": 4200 },
+      { "grade": "Grade VII", "amount": 4500 },
+      { "grade": "Grade VIII", "amount": 4800 }
+    ]
+  },
+  "uniform": {
+    "title": "School uniform",
+    "intro": "There is a formal uniform and a sports uniform. The formal uniform is worn from Tuesday to Saturday; the sports uniform is worn on Monday.",
+    "groups": [
+      {
+        "group": "Pre-Primary — Girls",
+        "formal": "Red and blue chequered tunic, yellow blouse, white socks with yellow stripes, black shoes.",
+        "sports": "White tunic and white blouse, white socks, plain white canvas shoes."
+      },
+      {
+        "group": "Pre-Primary — Boys",
+        "formal": "Red and blue chequered half pant, yellow shirt, white socks with yellow stripes, black shoes.",
+        "sports": "White half pant and white shirt, plain white socks, plain white canvas shoes."
+      },
+      {
+        "group": "Boys — Grades I to X",
+        "formal": "Chequered half pant (Grades I–VII) or chequered full pant (Grades VIII–X), cream shirt, white socks with brown stripes, plain black shoes.",
+        "sports": "White half pant and white shirt, plain white socks, plain white canvas shoes."
+      },
+      {
+        "group": "Girls — Grades I to X",
+        "formal": "Chequered tunic, cream blouse, white socks with brown stripes, plain black shoes, black ribbon.",
+        "sports": "White tunic and white blouse, white socks, plain white canvas shoes, two plaits with black ribbons."
+      }
+    ],
+    "rules": [
+      "Black hair bands, black clips and black ribbons only.",
+      "White socks and white lace-up sports shoes for Grades I to X.",
+      "Designed or decorated shoes are not permitted.",
+      "The formal uniform is worn Tuesday to Saturday; the sports uniform on Monday."
+    ]
+  },
+  "payment": {
+    "title": "Payment & policy",
+    "items": [
+      {
+        "title": "Instalments",
+        "description": "Fees are payable by term. The schedule for the session is issued in writing at admission."
+      },
+      {
+        "title": "Receipts",
+        "description": "An official receipt is issued for every payment. Please retain it — it is required for the transfer certificate."
+      },
+      {
+        "title": "Concessions",
+        "description": "The Society considers requests for assistance on a case-by-case basis. Speak to the school office in confidence."
+      },
+      {
+        "title": "Refunds",
+        "description": "Refunds on withdrawal are governed by the policy issued with the fee structure for the session."
+      }
+    ]
+  }
+}

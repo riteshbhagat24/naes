@@ -1,0 +1,30 @@
+{
+  "eyebrow": "About the school",
+  "title": "Where learning meets inspiration",
+  "lead": "We value individualism, creativity and innovation — and we build a day around all three.",
+  "paragraphs": [
+    "New Apostolic English High School stands on Kukde Layout in Rameshwari, a short walk from the Railway Police Headquarters, and has become a landmark of academic and cultural life in South Nagpur. Alongside it sits Dr. Bower Apostolic Junior College, so a student who joins us in Nursery can continue through Class XII and into our degree programmes without leaving the campus they grew up on.",
+    "The school was founded by the late Bishop Adv. Dr. Vincent S. Bower under the National Apostolic Church Education Society, with the late Mrs. Alice Vincent Bower as Mother Superior. What they set down was not a syllabus but a temperament: teach every child as an individual, expect real work, and measure a school by the character of the adults it releases into the world.",
+    "Our classrooms are more than places to study. They are spaces to grow — where curiosity is treated as an asset rather than an interruption, and where a child is encouraged to explore, to be wrong, and to try again."
+  ],
+  "highlights": [
+    { "title": "Individual attention", "description": "Class sizes and teaching practice that let a teacher know each child by name, pace and temperament." },
+    { "title": "Academic and artistic", "description": "Excellence in the examination hall and on the stage are treated as the same ambition, not competing ones." },
+    { "title": "Moral awareness", "description": "Ethics, empathy and environmental responsibility are taught as part of the timetable, not as an add-on." }
+  ],
+  "images": [
+    {
+      "src": "/images/academics/primary-students.jpg",
+      "alt": "Primary school students of New Apostolic English School in class"
+    },
+    {
+      "src": "/images/gallery/pre-primary-banana-day.jpg",
+      "alt": "Pre-primary children taking part in a themed activity day"
+    },
+    {
+      "src": "/images/facilities/computer-lab.jpg",
+      "alt": "Junior college students at work in the computer laboratory"
+    }
+  ],
+  "cta": { "label": "Read our full story", "href": "/about" }
+}

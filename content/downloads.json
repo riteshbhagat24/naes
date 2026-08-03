@@ -1,0 +1,93 @@
+{
+  "eyebrow": "Downloads",
+  "title": "Forms, lists and guides",
+  "description": "Everything a parent typically needs on paper, in one place. All files are PDFs and open in a new tab.",
+  "categories": [
+    "Admissions",
+    "Academics",
+    "Campus",
+    "Policies"
+  ],
+  "items": [
+    {
+      "id": "admission-enquiry-form",
+      "title": "Admission Enquiry Form 2026–27",
+      "description": "The printable enquiry form for families who prefer to submit at the school office rather than online.",
+      "file": "/downloads/admission-enquiry-form-2026-27.pdf",
+      "category": "Admissions",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-08"
+    },
+    {
+      "id": "admission-checklist",
+      "title": "Admission Document Checklist",
+      "description": "Every document required at admission, listed by grade, with notes on what a transfer certificate must show.",
+      "file": "/downloads/admission-document-checklist.pdf",
+      "category": "Admissions",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-08"
+    },
+    {
+      "id": "book-set-list",
+      "title": "Book Set Details & Approximate Cost",
+      "description": "Grade-wise book sets with the approximate cost of each, as published by the school office.",
+      "file": "/downloads/book-set-details.pdf",
+      "category": "Academics",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-15"
+    },
+    {
+      "id": "uniform-guide",
+      "title": "School Uniform Guide",
+      "description": "The complete formal and sports uniform requirement for every section, including footwear and hair rules.",
+      "file": "/downloads/school-uniform-guide.pdf",
+      "category": "Campus",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-15"
+    },
+    {
+      "id": "academic-calendar",
+      "title": "Academic Calendar 2026–27",
+      "description": "Term dates, examination periods, celebrations and holidays for the session. Dates are provisional and confirmed by circular.",
+      "file": "/downloads/academic-calendar-2026-27.pdf",
+      "category": "Academics",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-08"
+    },
+    {
+      "id": "school-timings",
+      "title": "School Timings & Contact Sheet",
+      "description": "Section timings, office hours, and the numbers to call for admissions, accounts and general enquiries.",
+      "file": "/downloads/school-timings-and-contacts.pdf",
+      "category": "Campus",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-08"
+    },
+    {
+      "id": "safety-policy",
+      "title": "Campus Safety & Child Protection Summary",
+      "description": "CCTV coverage, gate protocol, identity cards, the authorised-person rule and the section attendant arrangement.",
+      "file": "/downloads/campus-safety-summary.pdf",
+      "category": "Policies",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-22"
+    },
+    {
+      "id": "career-application",
+      "title": "Teaching Post Application Form",
+      "description": "The printable application form for teaching and non-teaching positions at the school and junior college.",
+      "file": "/downloads/teaching-post-application-form.pdf",
+      "category": "Policies",
+      "format": "PDF",
+      "size": "3 KB",
+      "updated": "2026-06-08"
+    }
+  ]
+}

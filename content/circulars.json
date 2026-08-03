@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Circulars",
+  "title": "Official notices to parents",
+  "description": "Circulars are issued by the school office and sent home with students. They are published here so that a misplaced copy is never a problem.",
+  "note": "Circulars for the current session are added as they are issued. For a circular older than one session, please contact the school office on +91 96577 66740.",
+  "items": [
+    {
+      "id": "NAEHS-2026-01",
+      "reference": "NAEHS/2026-27/01",
+      "title": "Commencement of the 2026–27 academic session",
+      "date": "2026-06-08",
+      "audience": "All parents",
+      "summary": "Reopening dates by section, revised timings for Pre-Primary, Primary, High School and Junior College, and the uniform requirement for the first week."
+    },
+    {
+      "id": "NAEHS-2026-02",
+      "reference": "NAEHS/2026-27/02",
+      "title": "Book sets and stationery for the new session",
+      "date": "2026-06-15",
+      "audience": "All parents",
+      "summary": "Grade-wise book set details, the approximate cost of each set, and the collection schedule at the school office."
+    },
+    {
+      "id": "NAEHS-2026-03",
+      "reference": "NAEHS/2026-27/03",
+      "title": "Identity cards and campus safety procedure",
+      "date": "2026-06-22",
+      "audience": "All parents",
+      "summary": "Issue of student identity cards, the authorised-person procedure for collection, and a reminder of the CCTV and gate protocol."
+    },
+    {
+      "id": "NAEHS-2026-04",
+      "reference": "NAEHS/2026-27/04",
+      "title": "Plantation drive — participation and rota",
+      "date": "2026-07-03",
+      "audience": "Grades I to XII",
+      "summary": "Arrangements for the annual plantation drive, the class watering rota for the session, and what students should bring."
+    },
+    {
+      "id": "NAEHS-2026-05",
+      "reference": "NAEHS/2026-27/05",
+      "title": "Independence Day — assembly points and timings",
+      "date": "2026-08-06",
+      "audience": "All parents",
+      "summary": "Section-wise assembly points, reporting time, uniform requirement and arrangements for parents attending the ceremony."
+    },
+    {
+      "id": "NAEHS-2026-06",
+      "reference": "NAEHS/2026-27/06",
+      "title": "First term assessment schedule",
+      "date": "2026-08-20",
+      "audience": "Grades I to XII",
+      "summary": "The first term unit test and terminal examination timetable, along with the syllabus portion for each subject."
+    }
+  ]
+}

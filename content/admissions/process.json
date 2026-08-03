@@ -1,0 +1,75 @@
+{
+  "eyebrow": "Admissions 2026–27",
+  "title": "Five steps, and a person on the other end of each one",
+  "lead": "Admissions are open for every grade from Nursery to Class XII, and for our BBA and BCCA degree programmes.",
+  "intro": [
+    "We keep the process short and human. There is no entrance examination for the lower grades: what we want is to meet your child, understand where they are, and be honest with you about whether this is the right school for them.",
+    "Places in each grade are limited and are offered in the order enquiries are received and completed, so it is worth beginning early in the session."
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "title": "Send an enquiry",
+      "description": "Complete the online enquiry form, or call the school office.",
+      "detail": [
+        "Tell us your child's name, date of birth and the grade you are seeking, and we will confirm availability in that grade.",
+        "The form takes about two minutes. Our admissions office replies to every enquiry within two working days."
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Visit the campus",
+      "description": "Come and see the school on a working morning.",
+      "detail": [
+        "Walk the corridors, the laboratories and the ground while classes are running — a school on a quiet Sunday tells you nothing.",
+        "You will meet the section head and, wherever possible, the teacher who would teach your child."
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Interaction",
+      "description": "A short, informal conversation with your child.",
+      "detail": [
+        "For Pre-Primary, this is simply play and conversation so we can see how your child settles.",
+        "For Grade I and above, a brief interaction in English, mathematics and reading tells us where to start, not whether to accept."
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Submit documents",
+      "description": "The paperwork, in one visit.",
+      "detail": [
+        "Birth certificate; transfer certificate and last progress report from the previous school (Grade I and above); recent passport-size photographs; Aadhaar copies for child and parent; proof of residence.",
+        "The office will confirm the exact list for your child's grade in advance so nothing needs a second trip."
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Confirm the place",
+      "description": "Fee payment and the start-of-term pack.",
+      "detail": [
+        "On confirmation you will receive the fee structure for the session, the uniform and book requirement for the grade, and the term dates.",
+        "Your child's class teacher will contact you before the first day so that the first morning is not a cold start."
+      ]
+    }
+  ],
+  "documents": [
+    "Birth certificate of the child",
+    "Transfer certificate from the previous school (Grade I and above)",
+    "Latest progress report or mark sheet",
+    "Four recent passport-size photographs of the child",
+    "Aadhaar card copy — child and parent",
+    "Proof of residence",
+    "Caste or category certificate, where applicable"
+  ],
+  "eligibility": [
+    { "grade": "Nursery", "criteria": "Completed 3 years as on the start of the academic session" },
+    { "grade": "LKG", "criteria": "Completed 4 years as on the start of the academic session" },
+    { "grade": "UKG", "criteria": "Completed 5 years as on the start of the academic session" },
+    { "grade": "Grade I", "criteria": "Completed 6 years, with a transfer certificate from the previous school" },
+    { "grade": "Grades II – X", "criteria": "Age-appropriate, subject to place availability and a transfer certificate" },
+    { "grade": "Grades XI – XII", "criteria": "Class X result as per Maharashtra State Board norms" },
+    { "grade": "BBA / BCCA", "criteria": "Class XII pass as per university eligibility norms" }
+  ],
+  "cta": { "label": "Begin an enquiry", "href": "/admissions/enquiry" }
+}

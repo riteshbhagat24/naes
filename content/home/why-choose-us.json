@@ -1,0 +1,43 @@
+{
+  "eyebrow": "Why families choose us",
+  "title": "Six reasons parents stay with us from Nursery to Class XII",
+  "description": "Not slogans. These are the things parents tell us made the difference, and the things we are held to every year.",
+  "items": [
+    {
+      "icon": "users",
+      "title": "Experienced faculty",
+      "description": "Teachers who go beyond the syllabus — who stay back for the student who has not understood, and who prepare the one who has raced ahead.",
+      "image": "/images/people/staff-primary-2024-25.jpg"
+    },
+    {
+      "icon": "monitor",
+      "title": "Smart classrooms",
+      "description": "Digital teaching boards in regular use across the school, so a diagram can be drawn, animated, revisited and taken home.",
+      "image": "/images/academics/classroom-1.jpg"
+    },
+    {
+      "icon": "flask-conical",
+      "title": "Activity-based learning",
+      "description": "Science that is done rather than described. Physics and computer laboratories, robotics workshops and exhibitions run through the year.",
+      "image": "/images/facilities/robotics-workshop.jpg"
+    },
+    {
+      "icon": "heart-handshake",
+      "title": "Value education",
+      "description": "Ethics, empathy and environmental responsibility — plantation drives, community days and a motto that is actually used.",
+      "image": "/images/gallery/tree-plantation-drive.jpg"
+    },
+    {
+      "icon": "compass",
+      "title": "Career guidance",
+      "description": "Structured counselling for senior students choosing streams, entrance routes and degree programmes — including our own BBA and BCCA.",
+      "image": "/images/academics/junior-college-students.jpg"
+    },
+    {
+      "icon": "shield-check",
+      "title": "A safe campus",
+      "description": "Full CCTV coverage, guards at the gate and inside the premises, photo ID for every student, and attendants assigned to each section.",
+      "image": "/images/campus/campus-3.jpg"
+    }
+  ]
+}

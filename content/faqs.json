@@ -1,0 +1,67 @@
+{
+  "eyebrow": "Frequently asked",
+  "title": "The questions parents ask us first",
+  "description": "If your question is not answered here, call the school office on +91 96577 66740 and we will answer it directly.",
+  "items": [
+    {
+      "category": "Curriculum",
+      "question": "Which syllabus does the school follow?",
+      "answer": "The school follows the Maharashtra State Board syllabus. In the lower classes we teach on a CBSE-informed pattern, which builds a stronger foundation in language, conceptual mathematics and structured science before the board syllabus begins in the middle school."
+    },
+    {
+      "category": "Curriculum",
+      "question": "What is the medium of instruction?",
+      "answer": "English is the medium of instruction throughout the institution, from Nursery to the degree programmes. Marathi and Hindi are taught as languages, with Sanskrit available as an option in the senior grades."
+    },
+    {
+      "category": "School day",
+      "question": "What are the school timings?",
+      "answer": "Pre-Primary runs from 8:00 AM to 11:00 AM. Primary School onward runs from 7:00 AM to 11:30 AM. High School and Junior College run from 12:00 PM to 5:00 PM. The administrative office is open Monday to Saturday, 9:00 AM to 4:00 PM."
+    },
+    {
+      "category": "Safety",
+      "question": "What are the provisions for safety and security?",
+      "answer": "The school is under CCTV surveillance. Several guards are stationed at the gate and inside the school premises. Each student carries an identity card recording their parents' details, and only an authorised person is permitted to interact with or collect a child. Two attendants are assigned to the Pre-Primary section, and two attendants to each of the higher sections."
+    },
+    {
+      "category": "Transport",
+      "question": "What modes of transport are available?",
+      "answer": "Children travel to school by auto and by school van. Every child should arrive fresh and ready for the academic day, and their safety in transit is our main concern — please speak to the school office before finalising a transport arrangement so we can advise on the routes currently in use."
+    },
+    {
+      "category": "Admissions",
+      "question": "When do admissions open, and which grades are available?",
+      "answer": "Admissions for the 2026–27 academic session are open across every grade from Nursery to Class XII, along with our BBA and BCCA degree programmes. Places in each grade are limited and are offered in the order enquiries are received and completed."
+    },
+    {
+      "category": "Admissions",
+      "question": "How do I apply?",
+      "answer": "Begin with the online enquiry form on this website. Our admissions office will contact you within two working days to arrange a campus visit and an interaction, and will confirm the documents required for your child's grade."
+    },
+    {
+      "category": "Admissions",
+      "question": "What documents are required at admission?",
+      "answer": "You will typically need the child's birth certificate, the transfer certificate and progress report from the previous school (for Grade I and above), recent passport-size photographs, an Aadhaar copy for the child and parent, and proof of residence. The school office will confirm the exact list for the grade you are applying to."
+    },
+    {
+      "category": "Fees",
+      "question": "What does it cost, and what is included?",
+      "answer": "The fee structure is issued by the school office for each academic session and is shared with every family at the time of admission. The approximate cost of books by grade, along with the full uniform requirement, is published on our Fees & Uniform page."
+    },
+    {
+      "category": "School day",
+      "question": "Is there a canteen, and what does it serve?",
+      "answer": "Yes. A canteen facility is provided so that students can have a complete and healthy diet during the school day, and so the break is a genuine chance to refresh themselves."
+    },
+    {
+      "category": "Beyond the classroom",
+      "question": "What sports and activities are available?",
+      "answer": "Basketball, volleyball, cricket and cricket nets, athletics, table tennis, karate, carrom and a gymnasium. Alongside sport, the school runs an annual cultural programme, science and tour exhibitions, robotics workshops for high school classes, plantation drives and inter-school competition in music and elocution."
+    },
+    {
+      "category": "Beyond the classroom",
+      "question": "Is career guidance provided for senior students?",
+      "answer": "Yes. Senior students receive structured career guidance covering stream implications, entrance routes, application timelines and, where it fits, direct progression into our own BBA and BCCA degree programmes."
+    }
+  ]
+}

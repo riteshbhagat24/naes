@@ -1,0 +1,53 @@
+{
+  "eyebrow": "Our history",
+  "title": "A vision written on a crest, and the school built underneath it",
+  "lead": "The institution has grown in stages — each one added because families asked for the next step, not because a plan on paper called for it.",
+  "intro": [
+    "The story of New Apostolic English High School begins with the late Bishop Adv. Dr. Vincent S. Bower, who established the National Apostolic Church Education Society to bring a serious English-medium education within reach of families in South Nagpur. Alongside him, the late Mrs. Alice Vincent Bower — known throughout the school as Mother Superior — set the tone of care that still defines the place.",
+    "What began as a school for the youngest children grew, section by section, into a full pathway: a pre-primary wing, a primary school, a high school, and then Dr. Bower Apostolic Junior College with degree programmes in business administration and computer applications. Each addition answered the same question from the same parents — what happens after this year?"
+  ],
+  "timeline": [
+    {
+      "period": "The founding",
+      "title": "A society, a crest and a promise",
+      "description": "Bishop Adv. Dr. Vincent S. Bower establishes the National Apostolic Church Education Society and, with Mother Mrs. Alice Vincent Bower, opens the school at Kukde Layout, Rameshwari. The crest is drawn with an open book, a rising sun and the line that governs everything since: love thy neighbour as thyself."
+    },
+    {
+      "period": "The early years",
+      "title": "Pre-Primary and Primary take root",
+      "description": "Nursery, LKG and UKG classes open, followed by Grades I to V. The school establishes the practices that still hold — small, attentive classrooms, English as the medium from day one, and a school day wide enough to include play, craft and celebration."
+    },
+    {
+      "period": "Growing upward",
+      "title": "The High School years",
+      "description": "Grades VI to X are added under the Maharashtra State Board, with the earlier grades taught on a CBSE-informed foundation pattern. Science teaching moves decisively towards the laboratory, and the school begins entering students for inter-school competition in sport and the performing arts."
+    },
+    {
+      "period": "Higher education",
+      "title": "Dr. Bower Apostolic Junior College",
+      "description": "Junior College opens for Grades XI and XII, and is followed by degree programmes in Business Administration (BBA) and Computer Applications (BCCA). For the first time a student can complete the whole of their education — from three years old to a degree — on one campus."
+    },
+    {
+      "period": "2023 – 2024",
+      "title": "Laboratories, robotics and the exhibition floor",
+      "description": "Robotics workshops run for high school classes, science and tour exhibitions bring the year's practical work into public view, and the computer laboratory becomes the working home of the junior college's practical papers. The junior college's results are featured in the regional press."
+    },
+    {
+      "period": "2025 and onward",
+      "title": "Apostolic Sports and the next intake",
+      "description": "The annual sports meet is streamed in full from the school ground for families who cannot attend in person, and the institution continues to admit across every grade from Nursery to Class XII alongside its degree programmes."
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/people/founder-bishop-vincent-s-bower.jpg",
+      "alt": "Portrait of the late Bishop Adv. Dr. Vincent S. Bower, founder of the school",
+      "caption": "Bishop Adv. Dr. Vincent S. Bower, Founder"
+    },
+    {
+      "src": "/images/people/mother-superior-alice-vincent-bower.jpg",
+      "alt": "Portrait of the late Mrs. Alice Vincent Bower, Mother Superior",
+      "caption": "Mrs. Alice Vincent Bower, Mother Superior"
+    }
+  ]
+}

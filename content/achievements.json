@@ -1,0 +1,71 @@
+{
+  "eyebrow": "Achievements",
+  "title": "What our students have gone out and won",
+  "description": "Recorded from the school archive and from the regional press. Achievements are added each session by the school office.",
+  "items": [
+    {
+      "title": "State-level representation in throwball",
+      "description": "High school students represented the school at a state-level throwball fixture, one of the strongest results on our sporting record.",
+      "year": "2023–24",
+      "category": "Sport",
+      "level": "State",
+      "image": "/images/gallery/state-level-throwball.jpg"
+    },
+    {
+      "title": "Medals in patriotic singing competition",
+      "description": "Students who entered the inter-school patriotic singing competition returned with medals and participation certificates.",
+      "year": "2023–24",
+      "category": "Music",
+      "level": "Inter-school",
+      "image": "/images/gallery/patriotic-singing-medal.jpg"
+    },
+    {
+      "title": "Junior college results featured in the regional press",
+      "description": "The achievement of students at Dr. Bower Apostolic Junior College was carried as a news feature by UCN News Live, Nagpur.",
+      "year": "2024",
+      "category": "Academics",
+      "level": "Regional recognition",
+      "image": "/images/academics/junior-college-students.jpg"
+    },
+    {
+      "title": "Carrom — high school championship performance",
+      "description": "High school students competed in carrom fixtures at the district championship venue, an event the school enters every session.",
+      "year": "2023–24",
+      "category": "Sport",
+      "level": "District",
+      "image": "/images/gallery/carrom-high-school.jpg"
+    },
+    {
+      "title": "Science & tour exhibition",
+      "description": "Students designed, built and presented working models and study-tour findings to parents and visiting schools at the annual exhibition.",
+      "year": "2023–24",
+      "category": "Science",
+      "level": "School",
+      "image": "/images/facilities/science-exhibition.jpg"
+    },
+    {
+      "title": "Robotics workshop programme",
+      "description": "High school classes completed a practical robotics programme covering sensing, control and simple autonomous behaviour.",
+      "year": "2023–24",
+      "category": "Technology",
+      "level": "School",
+      "image": "/images/facilities/robotics-workshop.jpg"
+    },
+    {
+      "title": "Apostolic Sports 2025 streamed in full",
+      "description": "The annual sports meet was broadcast live from the school ground so that families unable to attend could watch every event.",
+      "year": "2025",
+      "category": "Sport",
+      "level": "School",
+      "image": "/images/campus/campus-2.jpg"
+    },
+    {
+      "title": "Plantation drive",
+      "description": "Students across sections planted and took responsibility for saplings on and around the campus as part of the school's environmental programme.",
+      "year": "2023–24",
+      "category": "Community",
+      "level": "School",
+      "image": "/images/gallery/tree-plantation-drive.jpg"
+    }
+  ]
+}
