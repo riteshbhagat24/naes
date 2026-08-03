@@ -71,7 +71,7 @@ export function AnnouncementBar({ announcement }: { announcement: Announcement }
             <button
               type="button"
               onClick={dismiss}
-              className="absolute right-4 grid size-7 place-items-center rounded-full text-brand-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:ring-2 focus-visible:ring-white"
+              className="absolute right-2 grid size-9 place-items-center rounded-full text-brand-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:size-7"
             >
               <X className="size-3.5" aria-hidden />
               <span className="sr-only">Dismiss announcement</span>

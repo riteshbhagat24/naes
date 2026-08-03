@@ -68,7 +68,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.22 }}
-          className="fixed inset-0 z-[110] flex items-start justify-center bg-sand-950/55 px-4 pt-[12vh] backdrop-blur-md"
+          className="fixed inset-0 z-[110] flex items-start justify-center bg-sand-950/55 px-4 pt-[12svh] backdrop-blur-md"
           onClick={onClose}
         >
           <motion.div
@@ -110,7 +110,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
               </button>
             </div>
 
-            <div className="max-h-[52vh] overflow-y-auto p-3">
+            <div className="max-h-[52svh] overflow-y-auto p-3">
               {query.trim().length < 2 ? (
                 <div className="p-2">
                   <p className="eyebrow mb-3 px-2 text-muted-foreground">Popular</p>

@@ -17,7 +17,12 @@ const HIDE_ON = ['/admissions/enquiry', '/contact', '/careers']
  * Appears once the visitor is a third of the way down a page, never on the
  * pages that already carry the form, and stays dismissed for the session.
  */
-export function StickyAdmissionBar() {
+export function StickyAdmissionBar({
+  onVisibilityChange,
+}: {
+  /** Lets the floating controls lift clear of the bar on small screens. */
+  onVisibilityChange?: (visible: boolean) => void
+}) {
   const pathname = usePathname()
   const { progress } = useScrollState()
   const [dismissed, setDismissed] = React.useState(false)
@@ -31,6 +36,10 @@ export function StickyAdmissionBar() {
   }, [])
 
   const visible = !dismissed && progress > 0.32 && progress < 0.94 && !HIDE_ON.includes(pathname)
+
+  React.useEffect(() => {
+    onVisibilityChange?.(visible)
+  }, [visible, onVisibilityChange])
 
   const dismiss = () => {
     setDismissed(true)
@@ -70,7 +79,7 @@ export function StickyAdmissionBar() {
             <button
               type="button"
               onClick={dismiss}
-              className="grid size-8 shrink-0 place-items-center rounded-full text-brand-200 transition-colors hover:bg-white/10 hover:text-white"
+              className="grid size-10 shrink-0 place-items-center rounded-full text-brand-200 transition-colors hover:bg-white/10 hover:text-white"
             >
               <X className="size-3.5" aria-hidden />
               <span className="sr-only">Dismiss admissions bar</span>

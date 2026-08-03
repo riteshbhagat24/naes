@@ -16,7 +16,7 @@ import { cn } from '@/lib/utils'
  * A single collapsed control expands into call / WhatsApp / enquiry. Hidden
  * until the visitor has scrolled, so it never competes with the hero.
  */
-export function FloatingActions() {
+export function FloatingActions({ raised = false }: { raised?: boolean }) {
   const pathname = usePathname()
   const { scrolled, progress } = useScrollState(280)
   const [open, setOpen] = React.useState(false)
@@ -48,7 +48,14 @@ export function FloatingActions() {
   ]
 
   return (
-    <div className="pointer-events-none fixed bottom-5 right-5 z-[90] flex flex-col items-end gap-3 sm:bottom-7 sm:right-7">
+    <div
+      className={cn(
+        'pointer-events-none fixed right-5 z-[90] flex flex-col items-end gap-3 transition-[bottom] duration-300 ease-premium sm:right-7',
+        // The sticky admissions bar only exists below `lg`, so the lift is a
+        // phone-and-tablet concern; desktop spacing is untouched.
+        raised ? 'bottom-[5.75rem] sm:bottom-[6.25rem] lg:bottom-7' : 'bottom-5 sm:bottom-7',
+      )}
+    >
       <AnimatePresence>
         {scrolled ? (
           <motion.button

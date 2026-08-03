@@ -94,7 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <SiteHeader announcement={announcement} />
 
-          <main id="main" className="min-h-[60vh]">
+          <main id="main" className="min-h-[60svh]">
             <PageTransition>{children}</PageTransition>
           </main>
 

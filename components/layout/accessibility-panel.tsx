@@ -46,8 +46,11 @@ const CURSORS: Option<CursorSetting>[] = [
  */
 export function AccessibilityPanel({
   onCursorChange,
+  raised = false,
 }: {
   onCursorChange?: (value: CursorSetting) => void
+  /** Lifts the control clear of the sticky admissions bar on small screens. */
+  raised?: boolean
 }) {
   const { preferences, update, reset } = usePreferences()
   const [open, setOpen] = React.useState(false)
@@ -105,7 +108,12 @@ export function AccessibilityPanel({
   }
 
   return (
-    <div className="fixed bottom-5 left-5 z-[90] sm:bottom-7 sm:left-7">
+    <div
+      className={cn(
+        'fixed left-5 z-[90] transition-[bottom] duration-300 ease-premium sm:left-7',
+        raised ? 'bottom-[5.75rem] sm:bottom-[6.25rem] lg:bottom-7' : 'bottom-5 sm:bottom-7',
+      )}
+    >
       <AnimatePresence>
         {open ? (
           <motion.div

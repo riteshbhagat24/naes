@@ -123,7 +123,7 @@ export function Lightbox({ images, index, onClose, onNavigate }: LightboxProps) 
               transition={{ duration: 0.4, ease: EASE.out }}
               className="flex h-full max-h-full w-full max-w-5xl flex-col items-center justify-center gap-4"
             >
-              <div className="relative h-full max-h-[68vh] w-full">
+              <div className="relative h-full max-h-[68svh] w-full">
                 <Image
                   src={current.src}
                   alt={current.alt}

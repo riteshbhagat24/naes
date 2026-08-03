@@ -12,15 +12,20 @@ import type { CursorSetting } from '@/hooks/use-preferences'
  * back-to-top, reader preferences, the optional pointer ring and the sticky
  * admissions bar. Grouped into one client island so the rest of the tree can
  * stay on the server.
+ *
+ * It also owns the one piece of shared state between them — whether the
+ * admissions bar is on screen — so the floating controls can lift clear of it
+ * on phones instead of covering its call to action.
  */
 export function ExperienceLayer() {
   const [cursor, setCursor] = React.useState<CursorSetting>('default')
+  const [admissionBarVisible, setAdmissionBarVisible] = React.useState(false)
 
   return (
     <>
-      <StickyAdmissionBar />
-      <FloatingActions />
-      <AccessibilityPanel onCursorChange={setCursor} />
+      <StickyAdmissionBar onVisibilityChange={setAdmissionBarVisible} />
+      <FloatingActions raised={admissionBarVisible} />
+      <AccessibilityPanel onCursorChange={setCursor} raised={admissionBarVisible} />
       <CustomCursor enabled={cursor === 'custom'} />
     </>
   )
