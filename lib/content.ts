@@ -43,10 +43,22 @@ export interface MarkdownDoc<T> {
   body: string
 }
 
-/** Reads every Markdown file in a collection directory, newest slug first. */
-export function getCollection<T extends { date?: string; order?: number }>(
-  directory: string,
-): Array<MarkdownDoc<T>> {
+/** The two front-matter keys the default ordering understands, if present. */
+interface Sortable {
+  date?: string
+  order?: number
+}
+
+/**
+ * Reads every Markdown file in a collection directory.
+ *
+ * Ordering is newest-date-first where the collection is dated, and by an
+ * explicit `order` key otherwise. `T` is deliberately unconstrained: a
+ * constraint of `{ date?: …; order?: … }` is an all-optional "weak type", which
+ * TypeScript refuses to match against front matter that happens to share none
+ * of those keys — the legal documents, for instance.
+ */
+export function getCollection<T>(directory: string): Array<MarkdownDoc<T>> {
   const dir = path.join(CONTENT_ROOT, directory)
   if (!fs.existsSync(dir)) return []
 
@@ -64,17 +76,16 @@ export function getCollection<T extends { date?: string; order?: number }>(
     })
 
   return docs.sort((a, b) => {
-    if (a.data.date && b.data.date) {
-      return new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+    const first = a.data as Sortable
+    const second = b.data as Sortable
+    if (first.date && second.date) {
+      return new Date(second.date).getTime() - new Date(first.date).getTime()
     }
-    return (a.data.order ?? 0) - (b.data.order ?? 0)
+    return (first.order ?? 0) - (second.order ?? 0)
   })
 }
 
-export function getCollectionItem<T extends { date?: string; order?: number }>(
-  directory: string,
-  slug: string,
-): MarkdownDoc<T> | null {
+export function getCollectionItem<T>(directory: string, slug: string): MarkdownDoc<T> | null {
   return getCollection<T>(directory).find((doc) => doc.slug === slug) ?? null
 }
 
