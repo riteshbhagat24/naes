@@ -83,13 +83,22 @@ export const revealChild: Variants = {
   },
 }
 
-/** Image reveal: the mask lifts, the photograph settles out of a slight zoom. */
+/**
+ * Image reveal: the photograph settles out of a slight zoom.
+ *
+ * This deliberately uses opacity and transform only. An earlier version wiped a
+ * `clip-path: inset()` mask, which left every photograph stuck at
+ * `inset(0% 0% 100% 0%)` — clipped to nothing — because the interpolation never
+ * ran. Opacity and transform are also the only two properties the compositor can
+ * animate without repainting, so this is the cheaper reveal as well as the
+ * reliable one.
+ */
 export const imageReveal: Variants = {
-  hidden: { clipPath: 'inset(0% 0% 100% 0%)', scale: 1.08 },
+  hidden: { opacity: 0, scale: 1.06 },
   visible: {
-    clipPath: 'inset(0% 0% 0% 0%)',
+    opacity: 1,
     scale: 1,
-    transition: { duration: 1.05, ease: EASE.out },
+    transition: { duration: 0.9, ease: EASE.out },
   },
 }
 
