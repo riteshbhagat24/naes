@@ -10,7 +10,15 @@ import { useHasPointer, usePrefersReducedMotion } from '@/hooks/use-media-query'
  * the returned handlers become no-ops so no listener work is done at all.
  */
 export function useMagnetic(strength = 0.28, radius = 120) {
-  const enabled = useHasPointer() && !usePrefersReducedMotion()
+  // Both media queries must be read unconditionally. Combining them as
+  // `useHasPointer() && !usePrefersReducedMotion()` short-circuits: on the first
+  // render `useHasPointer()` is false, so the second hook is never called — and
+  // once the media listener settles to true on a desktop pointer, React sees a
+  // different number of hooks and throws (error #311).
+  const hasPointer = useHasPointer()
+  const prefersReducedMotion = usePrefersReducedMotion()
+  const enabled = hasPointer && !prefersReducedMotion
+
   const ref = useRef<HTMLSpanElement | null>(null)
 
   const rawX = useMotionValue(0)

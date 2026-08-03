@@ -27,7 +27,7 @@ export default function Error({
   }, [error])
 
   return (
-    <section className="relative isolate flex min-h-[86svh] items-center overflow-hidden bg-sand-950 py-section">
+    <section className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[86svh] items-center overflow-hidden bg-sand-950 pb-section pt-[calc(var(--nav-height)+4rem)]">
       <Image
         src="/images/gallery/campus-moment-6.jpg"
         alt=""

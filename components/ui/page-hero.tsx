@@ -59,7 +59,7 @@ export function PageHero({
   }
 
   return (
-    <header className="relative isolate flex min-h-[62svh] items-end overflow-hidden bg-sand-950 pb-14 pt-[calc(var(--nav-height)+4rem)] sm:min-h-[70svh] sm:pb-20">
+    <header className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[62svh] items-end overflow-hidden bg-sand-950 pb-14 pt-[calc(var(--nav-height)+4rem)] sm:min-h-[70svh] sm:pb-20">
       {image ? (
         <div className="absolute inset-0 -z-10">
           <Image

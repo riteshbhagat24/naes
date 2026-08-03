@@ -59,7 +59,7 @@ export function Hero({ content }: { content: HeroContent }) {
     <section
       ref={ref}
       aria-label="Introduction"
-      className="relative isolate flex min-h-[100svh] flex-col justify-end overflow-hidden bg-sand-950 pb-16 pt-[calc(var(--nav-height)+4rem)] sm:pb-20"
+      className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[100svh] flex-col justify-end overflow-hidden bg-sand-950 pb-16 pt-[calc(var(--nav-height)+4rem)] sm:pb-20"
     >
       {/* ------------------------------------------------ backdrop */}
       <motion.div style={{ y: overlayY }} className="absolute inset-0 -z-20 scale-110">
@@ -200,18 +200,20 @@ export function Hero({ content }: { content: HeroContent }) {
 
       {/* ------------------------------------------------ scroll hint */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.3, duration: 0.8 }}
         style={{ opacity: contentOpacity }}
         className="pointer-events-none absolute inset-x-0 bottom-5 hidden justify-center sm:flex"
       >
-        <span className="flex flex-col items-center gap-2 text-caption uppercase tracking-[0.2em] text-sand-400">
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.3, duration: 0.8 }}
+          className="flex flex-col items-center gap-2 text-caption uppercase tracking-[0.2em] text-sand-400"
+        >
           {content.scrollHint}
           <span className="grid h-9 w-5 place-items-start rounded-full border border-sand-500/60 pt-1.5">
             <span className="size-1 animate-scroll-hint rounded-full bg-sand-300" />
           </span>
-        </span>
+        </motion.span>
       </motion.div>
     </section>
   )

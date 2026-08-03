@@ -40,6 +40,52 @@ const CURSORS: Option<CursorSetting>[] = [
 ]
 
 /**
+ * A radio group of preference options.
+ *
+ * Declared at module scope rather than inside the panel: a component defined in
+ * a render body is a brand-new type on every render, so React unmounts and
+ * remounts it — which would drop keyboard focus each time a setting changed.
+ */
+function Group<T extends string>({
+  label,
+  options,
+  value,
+  onChange,
+}: {
+  label: string
+  options: Option<T>[]
+  value: T
+  onChange: (value: T) => void
+}) {
+  return (
+    <fieldset className="border-0 p-0">
+      <legend className="mb-2 text-caption font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+        {label}
+      </legend>
+      <div className="flex gap-1.5" role="radiogroup" aria-label={label}>
+        {options.map((option) => (
+          <button
+            key={option.value}
+            type="button"
+            role="radio"
+            aria-checked={value === option.value}
+            onClick={() => onChange(option.value)}
+            className={cn(
+              'min-h-11 flex-1 rounded-lg border px-2.5 py-2 text-caption font-medium transition-colors',
+              value === option.value
+                ? 'border-primary bg-primary/10 text-primary'
+                : 'border-border text-muted-foreground hover:border-primary/40 hover:text-foreground',
+            )}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  )
+}
+
+/**
  * Reader controls: text size, contrast, motion and the decorative cursor.
  * Choices persist locally and are re-applied before first paint by the inline
  * script in the document head.
@@ -67,45 +113,6 @@ export function AccessibilityPanel({
     document.addEventListener('keydown', onKeyDown)
     return () => document.removeEventListener('keydown', onKeyDown)
   }, [open])
-
-  function Group<T extends string>({
-    label,
-    options,
-    value,
-    onChange,
-  }: {
-    label: string
-    options: Option<T>[]
-    value: T
-    onChange: (value: T) => void
-  }) {
-    return (
-      <fieldset className="border-0 p-0">
-        <legend className="mb-2 text-caption font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-          {label}
-        </legend>
-        <div className="flex gap-1.5" role="radiogroup" aria-label={label}>
-          {options.map((option) => (
-            <button
-              key={option.value}
-              type="button"
-              role="radio"
-              aria-checked={value === option.value}
-              onClick={() => onChange(option.value)}
-              className={cn(
-                'flex-1 rounded-lg border px-2.5 py-2 text-caption font-medium transition-colors',
-                value === option.value
-                  ? 'border-primary bg-primary/10 text-primary'
-                  : 'border-border text-muted-foreground hover:border-primary/40 hover:text-foreground',
-              )}
-            >
-              {option.label}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-    )
-  }
 
   return (
     <div
