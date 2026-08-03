@@ -25,6 +25,21 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
 
+  /**
+   * Ship the content directory with the serverless functions.
+   *
+   * Statically prerendered pages read /content at build time, so the values are
+   * baked into the HTML. A dynamic route re-renders the root layout at request
+   * time instead — and the layout reads the announcement bar from disk. Next.js
+   * traces file dependencies statically, so a path assembled at runtime
+   * (`path.join(CONTENT_ROOT, relativePath)`) is invisible to it and /content
+   * never reaches the lambda, which is what made /search return a 500 while
+   * every static route was fine.
+   */
+  outputFileTracingIncludes: {
+    '/**': ['./content/**/*'],
+  },
+
   async headers() {
     return [
       {
