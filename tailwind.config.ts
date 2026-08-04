@@ -156,7 +156,7 @@ const config: Config = {
         'h2': ['clamp(1.875rem, 1.45rem + 1.9vw, 3rem)', { lineHeight: '1.1', letterSpacing: '-0.026em' }],
         'h1': ['clamp(2.375rem, 1.7rem + 3vw, 4.25rem)', { lineHeight: '1.04', letterSpacing: '-0.032em' }],
         'display': ['clamp(2.75rem, 1.6rem + 5.1vw, 6rem)', { lineHeight: '0.98', letterSpacing: '-0.038em' }],
-        'hero': ['clamp(2.25rem, 0.9rem + 5vw, 5rem)', { lineHeight: '0.96', letterSpacing: '-0.04em' }],
+        'hero': ['clamp(2.5rem, 1rem + 6vw, 7rem)', { lineHeight: '0.96', letterSpacing: '-0.042em' }],
       },
       spacing: {
         'section': 'clamp(4.5rem, 3rem + 6vw, 9rem)',

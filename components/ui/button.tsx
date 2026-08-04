@@ -25,8 +25,11 @@ const buttonVariants = cva(
         subtle: 'bg-muted text-foreground hover:bg-sand-200 dark:hover:bg-sand-800',
         light:
           'bg-white/95 text-sand-900 shadow-sm backdrop-blur hover:bg-white active:translate-y-px',
+        /* A dark scrim rather than a light wash: white text then has a
+           guaranteed contrast floor no matter how bright the photograph
+           underneath happens to be. */
         glass:
-          'border border-white/70 bg-white/20 text-white shadow-sm backdrop-blur-md hover:border-white hover:bg-white/30',
+          'border border-white/45 bg-sand-950/65 text-white shadow-md backdrop-blur-md hover:border-white/80 hover:bg-sand-950/80',
         accent: 'bg-accent text-accent-foreground shadow-sm hover:bg-gold-600 active:translate-y-px',
         link: 'h-auto p-0 text-primary underline-offset-4 hover:underline',
         danger: 'bg-danger text-danger-foreground shadow-sm hover:brightness-95',

@@ -44,7 +44,7 @@ export function Hero({ content }: { content: HeroContent }) {
 
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const overlayY = useTransform(scrollYProgress, [0, 1], ['0%', '22%'])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.25, 0.8], [1, 1, 0])
   const contentY = useTransform(scrollYProgress, [0, 1], ['0%', '32%'])
 
   React.useEffect(() => {
@@ -59,7 +59,7 @@ export function Hero({ content }: { content: HeroContent }) {
     <section
       ref={ref}
       aria-label="Introduction"
-      className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[100svh] flex-col justify-end overflow-hidden bg-sand-950 pb-14 pt-[calc(var(--nav-height)+3rem)] sm:pb-16 short:pb-10 short:pt-[calc(var(--nav-height)+1.5rem)]"
+      className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[100svh] flex-col justify-center overflow-hidden bg-sand-950 pb-20 pt-[calc(var(--nav-height)+2rem)] sm:pb-24 short:pb-16 short:pt-[calc(var(--nav-height)+1rem)]"
     >
       {/* ------------------------------------------------ backdrop */}
       <motion.div style={{ y: overlayY }} className="absolute inset-0 -z-20 scale-110">
@@ -125,7 +125,7 @@ export function Hero({ content }: { content: HeroContent }) {
           {content.eyebrow}
         </motion.p>
 
-        <h1 className="max-w-5xl font-display text-hero font-bold text-white">
+        <h1 className="max-w-5xl font-display text-hero font-bold text-white short:text-[clamp(2.25rem,1rem+4.2vw,4.5rem)] shorter:text-[clamp(2rem,1rem+3.4vw,3.5rem)]">
           <span className="sr-only">{content.headlineLines.join(' ')}</span>
           <span aria-hidden className="block">
             {content.headlineLines.map((line, lineIndex) => (
@@ -154,8 +154,10 @@ export function Hero({ content }: { content: HeroContent }) {
           className="mt-7 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end short:mt-5"
         >
           <div className="max-w-xl">
-            <p className="font-display text-h6 font-medium text-sand-100">{content.subheadline}</p>
-            <p className="mt-4 max-w-lg text-body text-sand-300 text-pretty short:mt-3 short:text-body-sm shorter:hidden">
+            <p className="font-display text-h5 font-medium text-sand-100 short:text-h6">
+              {content.subheadline}
+            </p>
+            <p className="mt-5 line-clamp-4 max-w-xl text-body-lg text-sand-200 text-pretty sm:line-clamp-none short:mt-3 short:text-body shorter:hidden">
               {content.intro}
             </p>
 
