@@ -4,7 +4,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronDown, Mail, Phone, X } from 'lucide-react'
+import { ChevronDown, Mail, Phone, Search, X } from 'lucide-react'
 import { mainNavigation, quickLinks } from '@/config/navigation'
 import { siteConfig } from '@/config/site'
 import { useLockBody } from '@/hooks/use-lock-body'
@@ -13,6 +13,7 @@ import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Icon } from '@/components/ui/icon'
 import { Logo } from '@/components/layout/logo'
+import { ThemeToggle } from '@/components/layout/theme-toggle'
 
 /**
  * Full-height mobile navigation drawer.
@@ -21,7 +22,16 @@ import { Logo } from '@/components/layout/logo'
  * closes, and each top-level section is a disclosure with a real
  * `aria-expanded` button rather than a styled div.
  */
-export function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function MobileDrawer({
+  open,
+  onClose,
+  onOpenSearch,
+}: {
+  open: boolean
+  onClose: () => void
+  /** Search moves in here on phones, where the header has no room for it. */
+  onOpenSearch?: () => void
+}) {
   const pathname = usePathname()
   const [expanded, setExpanded] = React.useState<string | null>(null)
   const panelRef = React.useRef<HTMLDivElement>(null)
@@ -96,6 +106,18 @@ export function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => 
                 <X className="size-5" aria-hidden />
                 <span className="sr-only">Close menu</span>
               </button>
+            </div>
+
+            <div className="flex items-center gap-2 border-b border-border px-5 py-3">
+              <button
+                type="button"
+                onClick={onOpenSearch}
+                className="flex min-h-11 flex-1 items-center gap-3 rounded-xl border border-border px-4 text-body-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
+              >
+                <Search className="size-4 shrink-0" aria-hidden />
+                Search the website
+              </button>
+              <ThemeToggle />
             </div>
 
             <nav aria-label="Mobile" className="flex-1 overflow-y-auto overscroll-contain px-5 py-6">

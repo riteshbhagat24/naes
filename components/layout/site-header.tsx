@@ -8,7 +8,6 @@ import { ChevronDown, Menu, Search } from 'lucide-react'
 import { mainNavigation } from '@/config/navigation'
 import { isImmersiveRoute } from '@/config/routes'
 import { useScrollState } from '@/hooks/use-scroll-state'
-import { EASE } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 import { Logo } from '@/components/layout/logo'
 import { MegaMenuPanel } from '@/components/layout/mega-menu'
@@ -21,13 +20,17 @@ import { AnnouncementBar, type Announcement } from '@/components/layout/announce
 /**
  * Sticky site header.
  *
- * Transparent over the photographic mastheads while the page is at rest,
- * frosted glass the moment it scrolls, and hidden on downward scroll deep in a
- * page so long reads keep their full viewport.
+ * Pinned to the top of the viewport on every route and every breakpoint — it
+ * never hides on scroll, so navigation and the admissions call to action are
+ * always one tap away. Transparent over the photographic mastheads while the
+ * page is at rest, frosted glass the moment it moves.
+ *
+ * On phones the search and theme controls fold into the drawer so the crest and
+ * the Enquire button always fit, down to a 320px screen.
  */
 export function SiteHeader({ announcement }: { announcement: Announcement }) {
   const pathname = usePathname()
-  const { scrolled, direction, progress } = useScrollState(16)
+  const { scrolled, progress } = useScrollState(16)
   const [openMenu, setOpenMenu] = React.useState<string | null>(null)
   const [drawerOpen, setDrawerOpen] = React.useState(false)
   const [searchOpen, setSearchOpen] = React.useState(false)
@@ -35,7 +38,6 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
 
   const immersive = isImmersiveRoute(pathname)
   const transparent = immersive && !scrolled && !openMenu
-  const hidden = scrolled && direction === 'down' && progress > 0.08 && !openMenu
 
   /* Close everything on navigation. */
   React.useEffect(() => {
@@ -74,9 +76,7 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
       <div className="sticky top-0 z-[80] w-full">
         <AnnouncementBar announcement={announcement} />
 
-        <motion.header
-          animate={{ y: hidden ? '-120%' : '0%' }}
-          transition={{ duration: 0.4, ease: EASE.inOut }}
+        <header
           onMouseLeave={scheduleClose}
           className={cn(
             'relative w-full border-b transition-[background-color,border-color,box-shadow] duration-500',
@@ -158,7 +158,7 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
                 type="button"
                 onClick={() => setSearchOpen(true)}
                 className={cn(
-                  'grid size-10 place-items-center rounded-full transition-colors duration-300',
+                  'hidden size-10 place-items-center rounded-full transition-colors duration-300 sm:grid',
                   transparent
                     ? 'text-white/85 hover:bg-white/12 hover:text-white'
                     : 'text-foreground/70 hover:bg-muted hover:text-primary',
@@ -168,14 +168,11 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
                 <span className="sr-only">Search the website</span>
               </button>
 
-              <ThemeToggle transparent={transparent} />
+              <span className="hidden sm:inline-flex">
+                <ThemeToggle transparent={transparent} />
+              </span>
 
-              <Button
-                asChild
-                size="sm"
-                variant={transparent ? 'glass' : 'primary'}
-                className="ml-1 hidden sm:inline-flex"
-              >
+              <Button asChild size="sm" variant="primary" className="ml-1 shadow-md">
                 <Link href="/admissions/enquiry">Enquire</Link>
               </Button>
 
@@ -210,7 +207,7 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
                 />
               ))}
           </div>
-        </motion.header>
+        </header>
 
         {/* Reading progress — a single hairline under the header. */}
         <AnimatePresence>
@@ -230,7 +227,14 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
         </AnimatePresence>
       </div>
 
-      <MobileDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+      <MobileDrawer
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        onOpenSearch={() => {
+          setDrawerOpen(false)
+          setSearchOpen(true)
+        }}
+      />
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   )

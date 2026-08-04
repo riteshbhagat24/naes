@@ -59,7 +59,7 @@ export function Hero({ content }: { content: HeroContent }) {
     <section
       ref={ref}
       aria-label="Introduction"
-      className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[100svh] flex-col justify-end overflow-hidden bg-sand-950 pb-16 pt-[calc(var(--nav-height)+4rem)] sm:pb-20"
+      className="relative isolate mt-[calc(var(--nav-height)*-1)] flex min-h-[100svh] flex-col justify-end overflow-hidden bg-sand-950 pb-14 pt-[calc(var(--nav-height)+3rem)] sm:pb-16 short:pb-10 short:pt-[calc(var(--nav-height)+1.5rem)]"
     >
       {/* ------------------------------------------------ backdrop */}
       <motion.div style={{ y: overlayY }} className="absolute inset-0 -z-20 scale-110">
@@ -119,7 +119,7 @@ export function Hero({ content }: { content: HeroContent }) {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: EASE.out, delay: 0.15 }}
-          className="eyebrow mb-6 flex flex-wrap items-center gap-3 text-gold-400"
+          className="eyebrow mb-5 flex flex-wrap items-center gap-3 text-gold-400 short:mb-3"
         >
           <span className="inline-block h-px w-10 bg-current opacity-60" aria-hidden />
           {content.eyebrow}
@@ -151,18 +151,30 @@ export function Hero({ content }: { content: HeroContent }) {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE.out, delay: 0.55 }}
-          className="mt-8 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end"
+          className="mt-7 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end short:mt-5"
         >
           <div className="max-w-xl">
             <p className="font-display text-h6 font-medium text-sand-100">{content.subheadline}</p>
-            <p className="mt-4 text-body text-sand-300 text-pretty">{content.intro}</p>
+            <p className="mt-4 max-w-lg text-body text-sand-300 text-pretty short:mt-3 short:text-body-sm shorter:hidden">
+              {content.intro}
+            </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3">
-              <MagneticButton href={content.primaryCta.href} size="lg" variant="light">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center short:mt-6">
+              <MagneticButton
+                href={content.primaryCta.href}
+                size="lg"
+                variant="light"
+                className="w-full sm:w-auto"
+              >
                 {content.primaryCta.label}
                 <ArrowRight aria-hidden />
               </MagneticButton>
-              <MagneticButton href={content.secondaryCta.href} size="lg" variant="glass">
+              <MagneticButton
+                href={content.secondaryCta.href}
+                size="lg"
+                variant="glass"
+                className="w-full sm:w-auto"
+              >
                 <Play className="fill-current" aria-hidden />
                 {content.secondaryCta.label}
               </MagneticButton>
@@ -201,7 +213,7 @@ export function Hero({ content }: { content: HeroContent }) {
       {/* ------------------------------------------------ scroll hint */}
       <motion.div
         style={{ opacity: contentOpacity }}
-        className="pointer-events-none absolute inset-x-0 bottom-5 hidden justify-center sm:flex"
+        className="pointer-events-none absolute inset-x-0 bottom-4 hidden justify-center lg:flex short:hidden"
       >
         <motion.span
           initial={{ opacity: 0 }}

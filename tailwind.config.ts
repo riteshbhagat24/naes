@@ -38,6 +38,10 @@ const config: Config = {
       screens: {
         xs: '420px',
         '3xl': '1728px',
+        /* Height-based, for laptop screens where a full-viewport hero has to
+           fit its headline, copy and buttons into one fold. */
+        short: { raw: '(max-height: 800px)' },
+        shorter: { raw: '(max-height: 680px)' },
       },
       maxWidth: {
         content: '1440px',
@@ -152,7 +156,7 @@ const config: Config = {
         'h2': ['clamp(1.875rem, 1.45rem + 1.9vw, 3rem)', { lineHeight: '1.1', letterSpacing: '-0.026em' }],
         'h1': ['clamp(2.375rem, 1.7rem + 3vw, 4.25rem)', { lineHeight: '1.04', letterSpacing: '-0.032em' }],
         'display': ['clamp(2.75rem, 1.6rem + 5.1vw, 6rem)', { lineHeight: '0.98', letterSpacing: '-0.038em' }],
-        'hero': ['clamp(3rem, 1.2rem + 8vw, 8.5rem)', { lineHeight: '0.92', letterSpacing: '-0.045em' }],
+        'hero': ['clamp(2.25rem, 0.9rem + 5vw, 5rem)', { lineHeight: '0.96', letterSpacing: '-0.04em' }],
       },
       spacing: {
         'section': 'clamp(4.5rem, 3rem + 6vw, 9rem)',

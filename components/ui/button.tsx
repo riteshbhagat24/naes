@@ -26,7 +26,7 @@ const buttonVariants = cva(
         light:
           'bg-white/95 text-sand-900 shadow-sm backdrop-blur hover:bg-white active:translate-y-px',
         glass:
-          'border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/45 hover:bg-white/20',
+          'border border-white/70 bg-white/20 text-white shadow-sm backdrop-blur-md hover:border-white hover:bg-white/30',
         accent: 'bg-accent text-accent-foreground shadow-sm hover:bg-gold-600 active:translate-y-px',
         link: 'h-auto p-0 text-primary underline-offset-4 hover:underline',
         danger: 'bg-danger text-danger-foreground shadow-sm hover:brightness-95',
