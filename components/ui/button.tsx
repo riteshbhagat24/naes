@@ -10,7 +10,7 @@ const buttonVariants = cva(
     'transition-[background-color,color,border-color,box-shadow,transform] duration-300 ease-premium',
     'disabled:pointer-events-none disabled:opacity-50',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
-    '[&_svg]:size-[1.05em] [&_svg]:shrink-0',
+    '[&_svg]:size-[1.05em] [&_svg]:shrink-0 [&>svg]:self-center',
   ].join(' '),
   {
     variants: {

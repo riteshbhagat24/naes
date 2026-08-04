@@ -172,7 +172,7 @@ export function SiteHeader({ announcement }: { announcement: Announcement }) {
                 <ThemeToggle transparent={transparent} />
               </span>
 
-              <Button asChild size="sm" variant="primary" className="ml-1 shadow-md">
+              <Button asChild size="sm" variant="primary" className="ml-1 text-white shadow-md">
                 <Link href="/admissions/enquiry">Enquire</Link>
               </Button>
 

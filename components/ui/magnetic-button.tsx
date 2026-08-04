@@ -32,11 +32,11 @@ export function MagneticButton({
 
   const content = (
     <>
-      <span className="relative z-10">{children}</span>
+      {children}
       {arrow ? (
         <ArrowUpRight
           aria-hidden
-          className="relative z-10 transition-transform duration-300 ease-premium group-hover/button:translate-x-0.5 group-hover/button:-translate-y-0.5"
+          className="shrink-0 transition-transform duration-300 ease-premium group-hover/button:translate-x-0.5 group-hover/button:-translate-y-0.5"
         />
       ) : null}
     </>
@@ -66,7 +66,7 @@ export function MagneticButton({
       style={{ x, y }}
       onPointerMove={onPointerMove}
       onPointerLeave={onPointerLeave}
-      className="inline-flex"
+      className="inline-flex shrink-0"
     >
       {inner}
     </motion.span>

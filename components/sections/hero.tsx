@@ -153,8 +153,8 @@ export function Hero({ content }: { content: HeroContent }) {
           transition={{ duration: 0.8, ease: EASE.out, delay: 0.55 }}
           className="mt-7 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end short:mt-5"
         >
-          <div className="max-w-xl">
-            <p className="font-display text-h5 font-medium text-sand-100 short:text-h6">
+          <div>
+            <p className="max-w-xl font-display text-h5 font-medium text-sand-100 short:text-h6">
               {content.subheadline}
             </p>
             <p className="mt-5 line-clamp-4 max-w-xl text-body-lg text-sand-200 text-pretty sm:line-clamp-none short:mt-3 short:text-body shorter:hidden">
@@ -174,8 +174,8 @@ export function Hero({ content }: { content: HeroContent }) {
               <MagneticButton
                 href={content.secondaryCta.href}
                 size="lg"
-                variant="glass"
-                className="w-full sm:w-auto"
+                variant="primary"
+                className="w-full text-white shadow-lg sm:w-auto"
               >
                 <Play className="fill-current" aria-hidden />
                 {content.secondaryCta.label}
